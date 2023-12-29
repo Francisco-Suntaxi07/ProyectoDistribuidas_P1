@@ -1,0 +1,234 @@
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\API_Libros.dll.config
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\API_Libros.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\API_Libros.pdb
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\csc.exe
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\csc.exe.config
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\csc.rsp
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\csi.exe
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\csi.exe.config
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\csi.rsp
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.AppContext.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Console.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.IO.Compression.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Net.Http.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Net.Sockets.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.ValueTuple.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Xml.XPath.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\vbc.exe
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\vbc.exe.config
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\vbc.rsp
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\VBCSCompiler.exe
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Antlr3.Runtime.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\API_Libros_BL.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\AutoMapper.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\EntityFramework.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\EntityFramework.SqlServer.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.Owin.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.Owin.Security.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Newtonsoft.Json.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Owin.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Net.Http.Formatting.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.Helpers.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.Http.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.Http.WebHost.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.Mvc.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.Optimization.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.Razor.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.WebPages.Deployment.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.WebPages.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.WebPages.Razor.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\WebGrease.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\API_Libros_BL.pdb
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\API_Libros_BL.dll.config
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\AutoMapper.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\EntityFramework.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\EntityFramework.SqlServer.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.Owin.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.Owin.Security.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Newtonsoft.Json.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Net.Http.Formatting.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.Helpers.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.Http.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.Http.WebHost.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.Mvc.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.Optimization.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.Razor.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.WebPages.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.WebPages.Deployment.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\System.Web.WebPages.Razor.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Antlr3.Runtime.pdb
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\es\System.Web.Helpers.resources.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\es\System.Web.Http.resources.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\es\System.Web.Mvc.resources.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\es\System.Web.Optimization.resources.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\es\System.Web.Razor.resources.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\es\System.Web.WebPages.resources.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\obj\Debug\API_Libros.csproj.AssemblyReference.cache
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\obj\Debug\API_Libros.csproj.CoreCompileInputs.cache
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\obj\Debug\API_Libros.csproj.CopyComplete
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\obj\Debug\API_Libros.dll
+C:\Users\santy\Documents\ESPE\6 Oct-Feb\AplicacionesDistribuidas\Proyecto\API\Libros\API_Libros\obj\Debug\API_Libros.pdb
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\API_Libros.dll.config
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\API_Libros.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\API_Libros.pdb
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\csc.exe
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\csc.exe.config
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\csc.rsp
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\csi.exe
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\csi.exe.config
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\csi.rsp
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.AppContext.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Console.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.IO.Compression.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Net.Http.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.ValueTuple.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\vbc.exe
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\vbc.exe.config
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\vbc.rsp
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\VBCSCompiler.exe
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Antlr3.Runtime.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\API_Libros_BL.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\AutoMapper.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\EntityFramework.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\EntityFramework.SqlServer.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.Owin.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.Owin.Security.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Newtonsoft.Json.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Owin.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Net.Http.Formatting.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.Helpers.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.Http.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.Http.WebHost.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.Mvc.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.Optimization.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.Razor.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.WebPages.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.WebPages.Razor.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\WebGrease.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\API_Libros_BL.pdb
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\API_Libros_BL.dll.config
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\AutoMapper.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\EntityFramework.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\EntityFramework.SqlServer.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.Owin.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.Owin.Security.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Newtonsoft.Json.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Net.Http.Formatting.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.Helpers.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.Http.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.Http.WebHost.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.Mvc.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.Optimization.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.Razor.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.WebPages.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\System.Web.WebPages.Razor.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Antlr3.Runtime.pdb
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\es\System.Web.Http.resources.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\es\System.Web.Razor.resources.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\obj\Debug\API_Libros.csproj.AssemblyReference.cache
+C:\Users\Francisco\Desktop\Libros\API_Libros\obj\Debug\API_Libros.csproj.CoreCompileInputs.cache
+C:\Users\Francisco\Desktop\Libros\API_Libros\obj\Debug\API_Libros.csproj.CopyComplete
+C:\Users\Francisco\Desktop\Libros\API_Libros\obj\Debug\API_Libros.dll
+C:\Users\Francisco\Desktop\Libros\API_Libros\obj\Debug\API_Libros.pdb
