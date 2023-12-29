@@ -11,6 +11,7 @@ using System.Web.Http;
 
 namespace API_Libros.Controllers
 {
+    [RoutePrefix("api/Autores")]
     public class AutoresController : ApiController
     {
         private IMapper mapper;
