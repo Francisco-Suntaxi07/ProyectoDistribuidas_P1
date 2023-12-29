@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x3kXvu/rcCSkwSpybYCO1TGMUpku1B6DEMu9/8RcT+9dvSpY5yetQp45BJFAV5t81mtGpPBUX5IewS4PL+t+lw==",
+  "dgSpecHash": "3hmyJr782yB3qIQuyLJHUJczNcXsCJeDqN/Sro1OA+dYBqhxqVf+ZzRMNdAGPEiv6FzQKXZT4UumtAhw6gUzyg==",
   "success": true,
-  "projectFilePath": "D:\\Documentos\\VisualStudioC\\ProyectoDistribuidas\\APIs\\PrestamoApi\\PrestamoApi.csproj",
+  "projectFilePath": "C:\\Users\\Francisco\\Desktop\\u\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\PrestamoApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Francisco\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Francisco\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

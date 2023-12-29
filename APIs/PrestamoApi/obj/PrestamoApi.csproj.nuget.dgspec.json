@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\VisualStudioC\\ProyectoDistribuidas\\APIs\\PrestamoApi\\PrestamoApi.csproj": {}
+    "C:\\Users\\Francisco\\Desktop\\u\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\PrestamoApi.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\VisualStudioC\\ProyectoDistribuidas\\APIs\\PrestamoApi\\PrestamoApi.csproj": {
+    "C:\\Users\\Francisco\\Desktop\\u\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\PrestamoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\VisualStudioC\\ProyectoDistribuidas\\APIs\\PrestamoApi\\PrestamoApi.csproj",
+        "projectUniqueName": "C:\\Users\\Francisco\\Desktop\\u\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\PrestamoApi.csproj",
         "projectName": "PrestamoApi",
-        "projectPath": "D:\\Documentos\\VisualStudioC\\ProyectoDistribuidas\\APIs\\PrestamoApi\\PrestamoApi.csproj",
+        "projectPath": "C:\\Users\\Francisco\\Desktop\\u\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\PrestamoApi.csproj",
         "packagesPath": "C:\\Users\\Francisco\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\VisualStudioC\\ProyectoDistribuidas\\APIs\\PrestamoApi\\obj\\",
+        "outputPath": "C:\\Users\\Francisco\\Desktop\\u\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Francisco\\AppData\\Roaming\\NuGet\\NuGet.Config",
