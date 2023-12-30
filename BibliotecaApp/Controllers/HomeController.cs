@@ -13,23 +13,11 @@ namespace BibliotecaApp.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
 
         public ActionResult MainPrestamo()
         {
             // Redirige a la acción "Index" del controlador "OtraPagina"
+            //ViewBag.Message = "Your contact page.";
             return RedirectToAction("MainPrestamo", "Prestamo");
         }
     }
