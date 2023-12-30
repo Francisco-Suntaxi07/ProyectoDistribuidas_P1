@@ -1,17 +1,21 @@
-﻿using System;
+﻿using BibliotecaApp.Models;
+using BibliotecaApp.Services;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace BibliotecaApp.Controllers
 {
     public class AutorController : Controller
     {
+        private readonly IAutorService _autorService = new AutorService();
+
         // GET: Autor
-        public ActionResult Index()
+        public async Task<ActionResult> MainAutor()
         {
-            return View();
+            List<AutorModel> autoresList = await _autorService.ListaAutores();
+            ViewBag.Message = "Your contact page.";
+            return View(autoresList);
         }
     }
 }
