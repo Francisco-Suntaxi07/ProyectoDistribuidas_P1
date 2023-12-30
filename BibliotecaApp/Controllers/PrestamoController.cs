@@ -21,5 +21,12 @@ namespace BibliotecaApp.Controllers.Prestamos
             ViewBag.Message = "Your contact page.";
             return View(prestamosList);
         }
+
+        public async Task<ActionResult> Form()
+        {
+            List<PrestamoModel> prestamosList = await _prestamoService.ListaPrestamos();
+            ViewBag.Message = "Your contact page.";
+            return View(prestamosList);
+        }
     }
 }
