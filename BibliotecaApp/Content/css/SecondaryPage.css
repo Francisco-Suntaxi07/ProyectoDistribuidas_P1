@@ -1,0 +1,4103 @@
+﻿/*<!-- IWU Jackson Library Styles -->*/
+/*<!-- This File Last Changed:May 24, 2021-->*/
+/* *******************************************************************
+Organization:
+Section 1 - Additions
+Section 2 - named styles listed in alphabetical order
+Section 3 - WebBridge
+Section 4 - Responsive and print media queries
+
+Color Scheme:
+2009B:
+background dark gray: #4D4D4D
+text dark gray: #444444
+blue: #1367A7
+link blue: #A6192E
+link active: #A6192E
+light blue: #E8F2F9
+yellow hover color: #FFFFE4
+Gray for borders and borders serving as horizontal rules: #D3D3D3
+
+Font Size Quick Reference
+(Default browser font size) * Body Font Size = Default Display Size 
+16pt * .85 = 13.6pt
+Find your desired size in ems by dividing your desired font-size in points by the present size of the font.
+For instance, 12pt font = 12/13.6 = .8824em.
+For 12pt, apply .8824em
+For 11pt, apply .8088em
+For 10pt, apply .7353em
+
+********************************************************************** */
+/*Section 1 -- additiona --2021 --*/
+
+
+/* general appearance */
+/* See also Web Option BODYPARAM */
+
+/* Stylesheet to use for dynamic Web pages */
+/* is set by Web Option STYLESHEET */
+
+a .dropdown-list (color:red!important;)
+/* Section 1   Additions and Global Styles*/
+/*Header*/
+.top {
+    background-color: #ffffff !important;
+}
+
+.navbar-brand {
+    height: 111px;
+}
+
+.rs {
+    padding-right: 200px;
+}
+
+#logo {
+    height: 111px;
+}
+
+/* Set the border color to the desired color */
+
+.custom-toggler.navbar-toggler {
+    border-color: #737373;
+    ;
+    border
+}
+
+.custom-toggler.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-default {
+    color: #fff;
+    background-color: #737373;
+}
+
+.nav.topLinks > li {
+    float: none;
+    display: inline-block;
+    color: #fff;
+    padding-right: 30px;
+    padding-left: 10px;
+    padding-top: 0px;
+    border: none;
+    font-family: Arial;
+    font-size: 1.5em;
+}
+
+    .nav.topLinks > li > a {
+        position: relative;
+        display: block;
+        padding: 0px;
+        color: #fff;
+    }
+
+        .nav.topLinks > li > a:hover {
+            position: relative;
+            display: block;
+            padding: 0px;
+            color: #fff;
+            text-decoration: underline;
+            background-color: transparent !important;
+            border: none;
+            outline: none;
+        }
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.img-fluid {
+    max-width: 186px !important;
+}
+
+@media (min-width: 768px) #header-bg {
+    height: 170px;
+}
+
+#header-bg {
+    background-color: #f7f7f7;
+    position: absolute;
+    top: -53px;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+    height: 250px;
+}
+
+#opener {
+    z-index: 1000;
+    position: relative;
+}
+
+    #opener .brand {
+        font-size: 0;
+        color: #a2151f;
+        display: block;
+        width: 100%;
+        height: 100px;
+        position: relative;
+        top: 0;
+        box-shadow: none;
+        background: #a2151f; /* Old browsers */
+        background: -moz-radial-gradient(top, #a2151f 0%, #8f0222 30%, #600a11 100%); /* FF3.6+ */
+        background: -webkit-gradient(radial, left top, left bottom, color-stop(0%,#a2151f), color-stop(44%,#8f0222), color-stop(100%,#600a11)); /* Chrome,Safari4+ */
+        background: -webkit-radial-gradient(top, #a2151f 0%,#8f0222 30%,#600a11 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-radial-gradient(top, #a2151f 0%,#8f0222 30%,#600a11 100%); /* Opera 11.10+ */
+        background: -ms-radial-gradient(top, #a2151f 0%,#8f0222 30%,#600a11 100%); /* IE10+ */
+        background: radial-gradient(to bottom, #a2151f 0%,#8f0222 30%,#600a11 100%); /* W3C */
+    }
+
+        #opener .brand:before {
+            content: "";
+            background: url("https://oak.indwes.edu:444/screens/IWULogoJLB.png") center center no-repeat;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+#global-dropdown {
+    position: absolute;
+    top: 5px;
+    margin: 0 auto;
+    right: 0;
+    width: 36px;
+    display: block;
+}
+
+    #global-dropdown .dropdown-toggle {
+        border: 1px solid #d8d8d8;
+        background-color: #b3b3b3;
+        color: #fff;
+        padding: 6px 7px 6px 7px;
+    }
+
+    #global-dropdown a:hover, #global-dropdown a:active, #global-dropdown a:focus {
+        text-decoration: none;
+        background-color: #666;
+        border-bottom: none;
+    }
+
+    #global-dropdown .dropdown-menu {
+        left: -254px;
+        top: 21px;
+        border-radius: 0 0 0 0;
+        min-width: 250px;
+        width: 290px;
+        padding-top: 0;
+    }
+
+        #global-dropdown .dropdown-menu > li {
+            width: 133px;
+            margin-left: 5px;
+            float: left;
+        }
+
+        #global-dropdown .dropdown-menu .nav-header {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-size: 13px;
+            padding-top: 8px;
+        }
+
+        #global-dropdown .dropdown-menu > li > a:hover {
+            background: #a90329; /* Old browsers */
+            background: -moz-linear-gradient(top, #a90329 0%, #6d0019 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #a90329 0%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #a90329 0%,#6d0019 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #a90329 0%,#6d0019 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #a90329 0%,#6d0019 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+        }
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mainmenu h1 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #626466;
+}
+/* landing page search : mainmenu.html (and some srchhelp_X.html) */
+
+.mainmenu #searchoptions, .advancedsearch #searchoptions {
+    display: none !important;
+}
+/* hide the topbar search on pages that are about search anyway */
+
+.mainmenu #not-loggedin, .advancedsearch #not-loggedin {
+    background: transparent;
+    border: none;
+}
+/* if user isn't logged in, there's no need for the empty colored bar. However, we still want the height it occupies */
+
+.mainmenu #search input[type="submit"] {
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+#not-loggedin #help {
+    display: inline-block;
+    margin: 15px 20px 0 0;
+}
+/* -- loggedin / not-loggedin in header -- */
+
+#loggedin, #not-loggedin {
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+    #loggedin ul {
+        display: inline-block;
+        margin: 5px 20px;
+    }
+
+    #loggedin #searchoptions, #not-loggedin #searchoptions {
+        display: inline-block;
+    }
+
+/*  #resourceAlertMessage .resourceResource ...? */
+/* buttons */
+
+a span.button, form input[type="submit"], form input[type="button"], .request-button, .SMbutton, #resourcelink span.button {
+    color: #000 !important;
+    background-color: #f2f2f8;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-bottom: 3px solid #c8c8cd;
+    white-space: nowrap;
+    border-radius: 0;
+    -moz-user-select: none;
+    padding: 5px 10px 2px 10px;
+    display: inline-block;
+    text-decoration: none !important;
+    margin-bottom: 10px;
+}
+
+#resourcelink span.button {
+    padding-top: 0;
+}
+
+    a span.button:hover, form input[type="submit"]:hover, form#search input[type="submit"]:hover, form input[type="button"]:hover, .request-button:hover, .SMbutton:hover, #resourcelink span.button:hover, .request-button:hover {
+        color: #fff !important;
+        background-color: #a6a6a6;
+        border-bottom: 3px solid #333;
+    }
+
+.request-button, .submit.button, .mainmenu #search input[type="submit"], #main-search.advanced input[type="submit"] {
+    background-color: #ebebeb;
+    border-bottom: 3px solid #a6192e;
+    margin-bottom: 0;
+    padding: 7px 14px 4px 14px;
+}
+
+aside .request-button, .SMbutton {
+    margin-top: 0;
+    background-color: #333;
+    color: #fff !important;
+    display: block;
+    border-bottom: none;
+}
+
+aside .request-button {
+    margin-bottom: 20px;
+}
+
+.SMbutton {
+    margin: 0 5px;
+    padding: 2px 10px;
+    display: inline-block;
+}
+
+
+    aside .request-button:hover, .SMbutton:hover { /* Request this item button */
+        background-color: #666;
+        border-bottom: none;
+    }
+
+.navigationRowRecord a span.button, .bibResourceSidebar a span.button, .bibResourceTableEntry a #resourcelink span.button {
+    color: #9D2235 !important;
+    background-color: transparent;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+}
+
+.navigationRowRecord a:hover span.button, .bibResourceSidebar a:hover span.button {
+    text-decoration: underline !important;
+}
+
+.navigationRowRecord a span.button i.fa, .bibResourceSidebar a span.button i.fa {
+    margin-right: 2px;
+}
+
+#sortbutton {
+    margin-left: 5px;
+}
+
+#resourcelink .button, .alternatives .findmore a {
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
+.spellcheckTool .spellcheckToolMore {
+    font-size: 15px;
+}
+
+.spellcheckTool i.fa-arrow-circle-right {
+    color: #9acd6f;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+.alternatives .findmore a {
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.alternatives {
+    vertical-align: bottom;
+}
+
+    .alternatives form#spellcheck {
+        display: inline-block;
+    }
+
+.mylistsSelect select, input[name="jumpto"] {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -1px;
+}
+
+.formButtonArea {
+    margin-top: 10px;
+}
+
+#resourceAlertMessage table { /* this is set to show if there is an alert in bibdisplay.js */
+    display: none;
+}
+
+.mainmenu #searchoptions, .advancedsearch #searchoptions {
+    display: none !important;
+}
+/* hide the topbar search on pages that are about search anyway */
+
+.mainmenu #not-loggedin, .advancedsearch #not-loggedin {
+    background: transparent;
+    border: none;
+}
+/* if user isn't logged in, there's no need for the empty colored bar. However, we still want the height it occupies */
+
+#not-loggedin #help {
+    display: inline-block;
+    margin: 15px 20px 0 0;
+}
+
+#bib_items {
+    margin: 20px 0 !important;
+}
+/*Global tag styles*/
+
+body {
+    background: url(background.gif) 2% 0% repeat-x #4D4D4D;
+    color: #444444;
+    font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 85%;
+    font-style: normal;
+    font-weight: normal;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+    min-width: 860px;
+}
+
+    /* Generated popup body */
+    body > font {
+        background: #FFFFFF;
+        width: 94%;
+        padding: 30px 50px 240px;
+        margin-bottom: -64px;
+        font-size: 1em;
+    }
+
+    body > br {
+        line-height: 0px;
+    }
+
+    body > div {
+        background: #FFFFFF;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+        body > div.mylistsSavePage {
+            background: none;
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+
+    body > span {
+        margin-top: -20px;
+        clear: both;
+    }
+
+caption {
+    border-bottom: 1px solid #D3D3D3;
+    font-weight: bold;
+    text-align: center;
+}
+
+div center table {
+    border-color: #D3D3D3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.pageContent > a:link, div.pageContent > a:visited, div.pageContent > a:active, div.pageContent > a:hover {
+    margin: 10px;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+form a {
+    display: table-cell;
+    display: inline-block;
+}
+
+/* This rule causes search form elements to resize along with the rest of the text on the page if the user resizes text. */
+input, select, textarea {
+    font-size: .97em;
+}
+
+    /* This rule uses CSS2 to give a nicer effect in compliant browsers, while avoiding an annoying display effect in Internet Explorer 6 */
+    input[type="checkbox"] {
+        background-color: #FFF8EF;
+    }
+
+legend {
+    color: #444444;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/*Global styles for status message pages.*/
+
+.pageContent > strong {
+    display: block;
+    width: 50%;
+    margin: 20px;
+}
+
+pre {
+    margin-left: 15px;
+}
+
+strong .button {
+    display: block;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+.pageContent > h1 {
+    margin: 30px 0 10px 20px;
+    font-size: 1.1em;
+}
+
+.pageContent > a > div {
+    margin-left: 20px;
+}
+
+.pageContent p {
+    margin-left: 20px;
+}
+
+.pageContentInner p {
+    margin-left: 0px;
+}
+
+
+/* end status message area */
+
+/*table { border-collapse:collapse; }
+td { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-style: normal; font-weight : normal; }
+th { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; }*/
+
+#content form, #content fieldset, #content .formEntryArea table {
+    max-width: 100%;
+}
+
+table td, table tbody th {
+    border-top: none !important;
+}
+
+select {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+table {
+    margin-bottom: 0 !important;
+}
+
+td {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* traditional link colors are suggested for better usability */
+a:link {
+    color: #A6192E;
+}
+
+a:active {
+    color: #A6192E;
+}
+
+a:visited {
+    color: #A6192E;
+}
+
+a:hover {
+    color: #000000;
+}
+
+/* Section 2 */
+/* named styles listed in alphabetical order */
+#accessibleForm {
+    font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+}
+
+    #accessibleForm fieldset {
+        border: 1px solid #CCCCCC;
+    }
+
+    #accessibleForm form legend {
+        font-weight: bold;
+    }
+
+    #accessibleForm h2 {
+        margin-left: 15px;
+        margin-bottom: 0;
+        margin-top: 12px
+    }
+
+    #accessibleForm span.formLabel {
+        display: block;
+        padding-top: 3px;
+    }
+
+    #accessibleForm span.formLabelExample {
+        font-style: italic;
+    }
+
+    #accessibleForm .formEntryArea, #accessibleForm .ecommerceFormEntryArea {
+        margin: 3px 0 0 15px;
+    }
+
+    #accessibleForm .formButtonArea .formButtonArea {
+        margin-left: 12px;
+        display: inline;
+    }
+
+    #accessibleForm font {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    #accessibleForm p {
+        margin-bottom: 5px;
+        margin-top: 3px;
+    }
+
+    #accessibleForm ul {
+        margin-left: 10px;
+        margin-top: 0px;
+        padding-left: 15px;
+    }
+
+.accessibleAddInfo {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+/*Include in screenreader but not visible*/
+
+.formButtonArea {
+    margin: 12px 0 0 15px;
+}
+
+    .formButtonArea a, .requestMultiPatform center a, .mylistsSavePage a {
+        text-decoration: none;
+    }
+
+    .formButtonArea input {
+        margin: 5px 0;
+    }
+
+.formEntryArea {
+}
+
+.formRequired {
+    color: #990000;
+    font-weight: bold;
+    font-size: 1.3em;
+    position: relative;
+    top: 5px;
+}
+
+.formsTogether {
+    width: 780px;
+}
+
+    .formsTogether .form1Part {
+        width: 96%;
+    }
+
+.additionalCopies {
+    margin: 20px 6px;
+}
+
+.advancedSearch td {
+    padding-right: 5px;
+    text-align: right;
+    vertical-align: top;
+    width: 5em;
+}
+
+.advancedSearch label {
+    text-align: right;
+}
+
+.advancedSearch fieldset fieldset legend {
+    visibility: hidden;
+    line-height: 0px;
+}
+
+#accessibleForm .advancedSearch fieldset fieldset {
+    border: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 0 6px 0;
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #9b9b9b !important;
+    border-color: #b2b4b2 !important;
+}
+
+.availLimMessage {
+}
+
+.bibClear {
+    clear: both;
+}
+
+.bibDetail {
+}
+
+    .bibDetail table {
+        vertical-align: top;
+    }
+
+#bibDisplayBody {
+    padding-top: 5px;
+}
+
+    #bibDisplayBody a:link, #bibDisplayBody a:visited, #formLinks a:link, #formLinks a:visited, .recordPager a:link, .recordPager a:visited, .actionButtonArea a:link, .actionButtonArea a:visited, .bibPager a:visited, .bibPager a:link {
+        color: #a6192e;
+        font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+        font-weight: bold;
+        padding: 6px 5px 3px 0px;
+        text-decoration: none;
+        width: auto;
+    }
+
+    #bibDisplayBody a:active, #bibDisplayBody a:hover, #formLinks a:active, #formLinks a:hover, .recordPager a:active, .recordPager a:hover, .actionButtonArea a:active, .actionButtonArea a:hover, .bibPager a:active, .bibPager a:hover {
+        text-decoration: underline;
+    }
+
+    #bibDisplayBody .bibVol a:link, #bibDisplayBody .bibVol a:visited {
+        font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    }
+
+.bibDisplayContent {
+    padding: 10px 0 10px 10px;
+}
+
+.bibDisplayContentMain, .resourceDisplayContentMain {
+    float: left;
+    width: 75%;
+    margin-left: 1.5em;
+    display: inline;
+}
+
+    .bibDisplayContentMain table, .bibDisplayUrls table, table.reserveBibs, .resourceDisplayContentMain table, .bibDisplayReviews {
+        border: 0;
+        font-size: .8824em;
+    }
+
+        .bibDisplayContentMain table table, .bibDisplayUrls table table, .resourceDisplayContentMain table table {
+            font-size: 1em;
+        }
+
+    .bibDisplayContentMain > a, .resourceDisplayContentMain > a {
+        margin: 4px 4px 4px 9%;
+        border: none;
+    }
+
+.bibDisplayContentMore {
+    border-top: 1px dashed #767C70;
+    clear: both;
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+
+.bibDisplayItems {
+    margin: 8px 0 0 10%;
+    width: 80%;
+}
+
+    .bibDisplayItems table, .requestMultiItems table {
+        border: 0;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    .bibDisplayItems th, .reserveBibs th, .resourceDisplayBibs th, .resourceResource th {
+        color: #767C70;
+    }
+
+    .bibDisplayItems td, .reserveBibs td, .resourceDisplayBibs td, .resourceResource td, .bibItems td, .bibHoldings td, .bibVol td {
+        border-top: 1px solid #ECECEC;
+        border-bottom: none;
+        vertical-align: top;
+    }
+
+.bibDisplayItemsHeader, .resourceDisplayLicenseHeader {
+    font-size: .8333em;
+    float: left;
+    margin: .5em 0 0 5%;
+}
+
+    .bibDisplayItemsHeader h2, .resourceDisplayLicenseHeader h2 {
+        color: #F7960C;
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+.bibDisplayItemsMain, .resourceLicenseArea {
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.bibDisplayJacket {
+    float: left;
+    margin: 0 0 1em 5%;
+    display: inline;
+    width: 6em;
+}
+
+.bibDisplayUrls td {
+    padding-bottom: 1% !important;
+    padding-top: 1.5% !important
+}
+
+.bibLinks th {
+    text-align: center;
+}
+
+.bibLinks a {
+    background: #8D0505 !important;
+    background-image: -webkit-linear-gradient(top, #8D0505, #8D0505) !important;
+    background-image: -moz-linear-gradient(top, #8D0505, #8D0505) !important;
+    background-image: -ms-linear-gradient(top, #8D0505, #8D0505) !important;
+    background-image: -o-linear-gradient(top, #8D0505, #8D0505) !important;
+    background-image: linear-gradient(to bottom, #8D0505, #8D0505) !important;
+    -webkit-border-radius: 30 !important;
+    -moz-border-radius: 30 !important;
+    border-radius: 30px !important;
+    font-family: Arial !important;
+    color: #ffffff !important;
+    font-size: 12px !important;
+    padding: 10px 20px 10px 20px !important;
+    text-decoration: none !important;
+}
+
+    .bibLinks a hover {
+        background: #3cb0fd !important;
+        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db) !important;
+        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db) !important;
+        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db) !important;
+        background-image: -o-linear-gradient(top, #3cb0fd, #3498db) !important;
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db) !important;
+        text-decoration: none !important;
+    }
+
+.bibMedia {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .bibMedia img {
+        margin-top: 10px;
+    }
+
+.bibDisplayPermLink {
+    float: right;
+}
+
+.bibDisplayProgramInfo {
+    float: right;
+    font-size: 1.1em;
+    margin: 5% 5% 15px 0;
+}
+
+h1.bibDisplayTitle {
+    display: inline;
+    font-size: 1em;
+}
+
+.bibInfoData {
+    vertical-align: top;
+}
+
+.bibInfoLabel, .resourceInfoLabel {
+    color: #767C70;
+    padding-right: .7em;
+    text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.resourceInfoLabel {
+    width: 15%;
+}
+
+table.bibItems {
+    clear: both;
+}
+
+.bibItems th {
+    text-align: left;
+}
+
+.bibItemsEntry td {
+    padding: 0;
+    margin: 0;
+}
+
+.bibItems {
+    border: none;
+}
+
+    .bibItems .bibItemsEntry td, .bibItems .bibItemsHeader th {
+        padding: 1px 2px;
+    }
+
+.bibRecordLink {
+    padding: 8px 0 8px 6px;
+}
+
+.bibResourceSidebar {
+    background: #FFFFFF url('tile_vgradient.jpg') repeat-x top left;
+    display: inline;
+    float: right;
+    margin-right: 10px;
+    width: 192px;
+}
+
+    .bibResourceSidebar .button {
+        margin: 1% 3%;
+    }
+
+table.bibResourceTable {
+    border: 0;
+}
+
+.bibResourceTableEntry {
+    background: transparent url('tile_hr.gif') repeat-x top right;
+    padding: 5px 5px 7px 5px;
+    text-align: center;
+}
+
+    .bibResourceTableEntry form {
+        font-size: .8088em;
+        font-weight: normal;
+    }
+
+.bibResourceTableHeader {
+    background: #E7E7E7;
+    color: #767C70;
+    line-height: 41px;
+    text-align: center;
+}
+
+.bibResourceTableEntry form {
+    padding: 0;
+    margin: 0;
+}
+
+.bibResourceTableEntry select {
+    display: block;
+    width: 100%;
+    margin: 2px 0px;
+}
+
+.bibHistoryRow, .resourceHistoryRow {
+    font-size: .83333em;
+}
+
+.bibHoldings {
+    border: none;
+    margin: 10px 0 5px;
+}
+
+.bibHolds {
+    border: 0;
+    background-color: #FFFEE4;
+    font-weight: bold;
+    margin-left: 9%;
+}
+
+.bibPager, .resourcePager, .recordPager {
+    text-align: right;
+    margin: 5px 3px 10px 5px;
+}
+
+.bibPager, .resourcePager, .recordPager {
+    font-size: .9167em;
+}
+
+    .bibPager div, .resourcePager div {
+        margin-right: 8px;
+    }
+
+.bibSearch {
+    background: url('tile_search.jpg') repeat-x bottom left;
+    border-color: #D3D3D3;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    margin-top: 4px;
+    text-align: center;
+}
+
+    .bibSearch form {
+        margin: 3px 0px;
+    }
+
+.searchtool select, .searchtool input {
+    line-height: 1.2em;
+}
+
+.bibSearchToolMessage {
+    margin-bottom: 5px;
+}
+
+.bibSearchHistory, .resourceHistory {
+    position: absolute;
+    right: 24px;
+    top: 36px;
+}
+
+.bibSearchHistory {
+    font-size: 0.83333em;
+}
+
+    .bibSearchHistory select, .resourceHistory select {
+        position: absolute;
+        right: 17px;
+        top: 28px;
+        width: 200px;
+    }
+
+.bibVol {
+    margin: 10px;
+}
+
+    .bibVol td {
+        padding-right: 10px;
+        font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+    }
+
+    .bibVol th, .bibVol td {
+        text-align: left;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .bibVol td {
+        text-align: center;
+    }
+
+.bookingForm fieldset {
+    margin-bottom: 10px;
+}
+
+.bookingsCalendar table {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    margin: 10px 0;
+}
+
+/* mediaicons */
+
+.mediaicon .Text:before {
+    content: '\f02d';
+    color: #2f5f84;
+}
+
+.mediaicon .AudioMusic:before, .mediaicon .MusicalScore:before, .mediaicon .ManuscriptMusic:before {
+    content: '\f001';
+    color: #773b6a;
+}
+
+.mediaicon .AudioSpoken:before {
+    content: '\f130';
+    color: #773b6a;
+}
+
+.mediaicon .Video:before {
+    content: '\f008';
+    color: #3c763d;
+}
+
+.mediaicon .Map:before, .mediaicon .ManuscriptMap:before {
+    content: '\f279';
+    color: #e07132;
+}
+
+.mediaicon .ManuscriptorThesis:before {
+    content: '\f15c';
+    color: #2f5f84;
+}
+
+.mediaicon .DImage:before {
+    content: '\f03e';
+    color: #275859;
+}
+
+.mediaicon .DObject:before {
+    content: '\f12e';
+    color: #dea444;
+}
+
+.mediaicon .ComputerFile:before {
+    content: '\f0c7';
+    color: #2f5f84;
+}
+
+.mediaicon .Kit:before {
+    content: '\f0b1';
+    color: #773b6a;
+}
+
+.mediaicon .Collection:before {
+    content: '\f187';
+    color: #dea444;
+}
+
+.mediaicon .Theses:before, .mediaicon .UAThesesDissertations:before {
+    content: '\f19d';
+}
+
+.mediaicon .InternetResource:before {
+    content: '\f0ac';
+    color: #2f5f84;
+}
+
+.briefcitDetail, .briefcitAuthDetail {
+    margin-left: 90px;
+}
+
+.briefcitFullRecord {
+    margin-top: 10px;
+}
+
+.briefcitRow + tr td.browseSaveJump form { /* "Locate in Results" form below briefcit list */
+    display: block;
+    margin-top: 5px;
+}
+
+td.briefcitCell:hover, .browseEntry:hover, .browseSubEntry:hover, .browseSubEntry.hovrd, .browseEntry.hovrd {
+    background-color: #fcf8e3 !important;
+}
+/* Brief Citation display styles */
+
+.bibSearchtool form input[type="submit"] {
+    margin: 10px 0;
+}
+
+.bibSearchtool form input[type="checkbox"] {
+    margin: 10px 0;
+}
+
+.browseSearchtool, .bibSearch form {
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f2f2f8;
+    margin: 10px 0;
+}
+
+    .browseSearchtool select {
+        margin-bottom: 15px;
+    }
+
+    .browseSearchtool #spellcheck_brief {
+        padding: 10px 0;
+        border-bottom: 1px solid #f2f2f8;
+        border-top: 1px solid #f2f2f8;
+        margin-top: 10px;
+    }
+
+    .bibSearch form #sort_cell {
+        margin-right: 6px;
+    }
+
+    .browseSearchtool #spellcheck {
+        border-bottom: none;
+    }
+
+    .browseSearchtool form > div input[type=checkbox], .bibSearch form > div input[type=checkbox] {
+        width: auto;
+        height: auto;
+    }
+
+.browseSuperEntry {
+    border-bottom: 1px solid #f2f2f8;
+}
+
+.briefcitCell {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.briefcitItemsHeader h2 {
+    font-size: 1.3em;
+    border-bottom: 1px solid #f2f2f8;
+}
+
+.briefcitTitle {
+    font-size: 1.2em
+}
+
+.bibItems {
+    border: none;
+}
+
+    .bibItems th {
+        padding: 0;
+    }
+
+    .bibItems td {
+        padding: 5px 0;
+    }
+
+    .bibItems tr:nth-child(even) {
+        background-color: #e4e4ea;
+    }
+
+.navigationRow {
+    text-align: left;
+    padding: 5px;
+}
+
+.browseScreen + .navigationRow {
+    padding-top: 30px;
+}
+
+.browseSaveJump, .browsePager {
+    padding-top: 15px !important;
+}
+
+#resourcelink {
+    float: right;
+    margin-top: 5px;
+}
+
+.browseHeader {
+    background-color: #e4e4ea;
+}
+
+.browseHeaderData {
+    padding: 10px;
+    text-align: center;
+}
+
+.browsePager {
+    padding-top: 15px;
+}
+
+    .browsePager a, .bibPager a, .recordPager a {
+        background-color: #f2f2f8;
+        padding: 4px 8px;
+        border-radius: 3px;
+    }
+
+        .browsePager a:hover, .bibPager a:hover, .recordPager a:hover {
+            text-decoration: none;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .browsePager a:before, .browsePager a:after {
+            font-family: "FontAwesome";
+            display: inline-block;
+        }
+
+        .browsePager a:first-child:before {
+            content: "\f137";
+            margin-right: 5px;
+        }
+
+        .browsePager a:last-child:after {
+            content: "\f138";
+            margin-left: 5px;
+        }
+
+h1.browseSuperEntryTitle {
+    font-size: 1em;
+    display: inline;
+    font-weight: bold;
+}
+
+.briefcitLeft, .briefcitResourceLeft {
+    display: inline;
+    float: left;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: left;
+    width: 80px;
+}
+
+.briefcitDetail .briefcitRight {
+    float: right;
+    text-align: center;
+}
+
+.briefcitDate {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.briefcitMedia img, .browseSubEntryMedia img, .bibMediaBibDisplay img, .browseEntryMedia img {
+    display: none;
+}
+
+#main-container .mediaicon p {
+    font-size: .95em;
+}
+
+#main-container {
+    padding-bottom: 1em;
+}
+
+.mediaicon p:before {
+    font-family: FontAwesome;
+    color: #333;
+}
+
+.mediaicon p:before {
+    display: block;
+    line-height: 30px;
+    font-size: 2.3em;
+}
+
+#main-container .bibResourceSidebar .mediaicon p {
+    font-size: 1.2em;
+}
+
+.bibResourceSidebar .mediaicon p:before {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1.5em;
+}
+
+/******************End briefcit********************/
+
+.browseEntry td {
+    border-top: 1px solid #ECECEC;
+    padding: 3px 0;
+}
+
+    .browseEntry td a {
+        margin-left: 3px;
+    }
+
+.browseEntry.browseEntryMedia, .browseSubEntryMedia {
+    font-size: .9187em;
+}
+
+.browseEntryMedia {
+    padding: 4px 0;
+}
+
+.browseEntryNum, .browseEntryMark {
+    vertical-align: top;
+}
+
+.browseEntryRelGroup1 {
+    margin: 0;
+}
+
+.browseHeaderData, .browseHeaderEntries, .browseHeaderMark, .browseHeaderNum, .browseHeaderYear, .browseHeaderMedia {
+    background: #e8f2f9;
+    border-bottom: 1px dotted #ECECEC;
+    font-weight: normal;
+    margin: 0;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.browseList th {
+    padding: 0 12px;
+}
+
+.browseList .deleteSelected {
+    margin: 0 12px 5px;
+}
+
+    .browseList .deleteSelected a {
+        display: inline-block;
+        text-decoration: none;
+        margin: 5px 0;
+    }
+
+.browsePager {
+    font-size: .8824em;
+    font-weight: bold;
+    padding: 8px 1px 5px 1px;
+}
+
+    .browsePager td {
+        position: absolute;
+        left: -999px;
+        width: auto;
+        margin: 0;
+    }
+
+        .browsePager td.browsePager {
+            position: static;
+        }
+
+    .browsePager strong {
+        border: 0;
+        padding: 5px;
+        margin: 2px 1px;
+        color: #014184;
+        background: #FFFFFF;
+    }
+
+    .browsePager a {
+        color: #202020;
+        text-decoration: none;
+        border: 1px solid #D3D3D3;
+        padding: 0 4px;
+    }
+
+        .browsePager a:hover {
+            background: #014184;
+            color: #FFFFFF;
+        }
+
+div.browseResourceTable {
+    display: none;
+    background: #FFFFFF url('tile_vgradient.jpg') repeat-x top left;
+    border: 0;
+    margin: 30px 10px 0 12px;
+    padding: 0;
+}
+
+.browseResourceTable {
+    padding-top: 5px;
+}
+
+    .browseResourceTable a:link, .browseResourceTable a:visited {
+        color: #a6192e;
+        font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+        font-weight: bold;
+        padding: 6px 5px 0px 0px;
+        text-decoration: none;
+        width: auto;
+    }
+
+    .browseResourceTable a:active, .browseResourceTable a:hover {
+        text-decoration: underline;
+    }
+
+table.browseResourceTable {
+    border: 0;
+}
+
+.browseResourceTableEntry {
+    background: transparent url('tile_hr.gif') repeat-x top right;
+    font-weight: normal;
+    padding: 5px 5px 7px 5px;
+    text-align: center;
+}
+
+    .browseResourceTableEntry td {
+    }
+
+.browseResourceTableHeader {
+    background: #E7E7E7;
+    color: #767C70;
+    line-height: 41px;
+    text-align: center;
+}
+
+.browseResourceTableEntry form {
+    font-size: .8088em;
+    padding: 0;
+    margin: 0;
+}
+
+.browseResourceTableEntry select {
+    overflow: hidden;
+}
+
+.browseSaveJump {
+    height: 1.2em;
+    overflow: hidden;
+    padding: 3px 0 3px 10px;
+}
+
+    .browseSaveJump a:link, .browseSaveJump a:visited {
+        color: #a6192e;
+        font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+        font-weight: bold;
+        padding: 6px 5px 3px 0px;
+        text-decoration: none;
+        width: auto;
+    }
+
+    .browseSaveJump a:active, .browseSaveJump a:hover {
+        text-decoration: underline;
+    }
+
+    .browseSaveJump img {
+        width: auto;
+    }
+
+.browseScreen td {
+    vertical-align: top;
+}
+
+.browseSearchtool td {
+    border: none;
+}
+
+.browseSearchtool {
+    background: url('tile_search.jpg') repeat-x bottom left;
+    border-color: #D3D3D3;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    font-size: .9em;
+    padding: 0;
+}
+
+#accessibleForm .browseSearchtool {
+    background: none;
+    border: none;
+    margin: 10px;
+    font-size: 1.0em;
+}
+
+.browseSearchtool form {
+    margin: 0;
+}
+
+.browseSearchtool input, .browseSearchtool select {
+    margin: 1px 1px 3px 1px;
+}
+
+.browseSearchtoolMessage {
+    margin-bottom: 3px;
+}
+
+.browseSubEntryMedia {
+    padding-bottom: .4em;
+}
+
+.browseSuperEntry {
+    background: #FFFFFF url('tile_browsesuperentry.jpg') repeat-x bottom left;
+    border-bottom: 1px solid #D3D3D3;
+    margin: 0;
+    text-align: center;
+}
+
+h1.browseSuperEntryTitle {
+    font-size: 1.1em;
+    display: inline;
+}
+
+.button {
+    white-space: nowrap;
+}
+
+    .button img {
+        border: 0;
+        margin-right: 3px;
+        vertical-align: text-bottom;
+    }
+
+.button2 {
+    font-size: .8824em;
+    white-space: nowrap;
+}
+
+#buttonNextRecord {
+    border-left: 1px solid #D3D3D3;
+    margin-right: 3px;
+    padding-left: 8px;
+}
+
+.buttonText {
+    font-size: .8824em;
+    font-weight: bold;
+    font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+    color: #990000;
+}
+
+.buttonTextMoreInfo {
+    font-size: .8824em;
+    font-weight: bold;
+    font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+}
+
+.buttonTopLinks {
+    white-space: nowrap;
+}
+
+    .buttonTopLinks img {
+        border: 0;
+        margin-right: 3px;
+    }
+
+.buttonTopLinksText {
+    vertical-align: top;
+}
+
+.buttonSpriteDiv {
+    cursor: pointer;
+    display: inline;
+    width: auto;
+    text-decoration: none;
+}
+
+.buttonSpriteSpan1 {
+    background: transparent url('/screens/buttonspritecap.gif') no-repeat scroll top right;
+    color: #444444;
+    display: table-cell;
+    display: inline-block;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    margin-bottom: 4px;
+    outline: none;
+    padding-right: 14px;
+    text-decoration: none;
+    width: auto;
+}
+
+.buttonSpriteSpan2 {
+    background: transparent url('/screens/buttonsprite.gif') no-repeat;
+    display: table-cell;
+    display: inline-block;
+    line-height: 14px;
+    outline: none;
+    padding: 5px 0 5px 16px;
+    text-decoration: none;
+}
+
+.pressedState .buttonSpriteSpan1 {
+    background-position: bottom right;
+    color: #000000;
+    outline: none;
+}
+
+    .pressedState .buttonSpriteSpan1 .buttonSpriteSpan2 {
+        background-position: bottom left;
+        outline: none;
+    }
+
+#booking_form input {
+    margin-left: 10px;
+}
+
+#booking_form .patFuncMark input {
+    margin-left: 0px;
+}
+
+.confirmationprompt {
+    margin: 20px 10px 12px;
+}
+
+.clear {
+    clear: both;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.confirmationprompt {
+    margin: 5px 20px 0;
+}
+
+.ecommerceFormDone {
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    text-align: left;
+    width: 97%;
+    padding-bottom: 12em;
+}
+
+    .ecommerceFormDone > div, .ecommerceFormDone > span {
+        margin: 10px 20px 15px;
+    }
+
+.ecommerceFormOptions {
+    float: left;
+    width: 23em;
+    margin-bottom: 10px;
+}
+
+.ecommerceFormPay {
+    float: left;
+    width: 200px;
+    padding: 0 5px;
+    width: 23em;
+}
+
+.pageContentInner .ecommerceFormPay h2, .pageContentInner .ecommerceFormOptions h2 {
+    margin-top: 0px;
+}
+
+.popupForm h2.ecommerceFormPayHead {
+    margin-left: 14px;
+    padding-top: 5px;
+    clear: both;
+}
+
+.ecommerceFormPay label {
+}
+
+.ecommerceFormEntryArea {
+    margin: 6px 0 0;
+}
+
+div .confirmValue {
+    padding-top: 3px;
+}
+
+.ecommerceFormEntryArea label span {
+    width: 95px;
+    float: left;
+}
+
+.ecommerceFormEntryArea input {
+    margin: 0px;
+}
+
+.ecommerceFormExample {
+    margin: 5px 0;
+}
+
+.payformTotals {
+    margin: 6px 0 0;
+}
+
+/*Export*/
+
+.exportHeading {
+    background: #FFFFFF;
+    clear: both;
+    padding: 10px 12px 0;
+    border-top: 2px solid #D3D3D3;
+    text-align: left;
+    font-weight: bold;
+}
+
+.exportBrief {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+    .exportBrief pre {
+        margin: 0 12px;
+    }
+
+.bibItems {
+    background: #FFFFFF;
+}
+
+div .bibResourceSidebar {
+    display: none;
+}
+
+.bibDisplayReviews {
+    display: none;
+}
+
+.bibDisplayPermLink {
+    display: none;
+}
+
+#bibDisplayBody {
+    background: #FFFFFF;
+}
+
+.pageContent #bibDisplayBody {
+    background: none;
+}
+
+.pageContent .bibItems {
+    background: none;
+}
+
+.pageContent div .bibResourceSidebar {
+    display: block;
+}
+
+.pageContent .bibDisplayReviews {
+    display: block;
+}
+
+.pageContent .bibDisplayPermLink {
+    display: block;
+}
+
+/*end export section*/
+
+.popupForm .formButtonArea {
+    clear: both;
+}
+
+.popupForm h2 {
+    margin: 7px 0 2px;
+}
+
+.formButtonArea {
+    margin: 3px 0 0 15px;
+}
+
+    .formButtonArea a {
+        text-decoration: none;
+    }
+
+    .formButtonArea input {
+        margin: 5px 0;
+    }
+
+.formEntryArea fieldset {
+    margin: 3px;
+    padding: 3px;
+}
+
+.form1Part {
+    padding: 10px;
+}
+
+.form2Part, .form1Part, .mylistsSavePage form {
+    background: #FFFFFF url(tile_vgradient.jpg) repeat-x scroll left top;
+    float: left;
+    margin-bottom: 15px;
+}
+
+    .form2Part fieldset, .form1Part fieldset {
+        padding: 0.35em 2em 0.75em 0;
+    }
+
+    .form2Part formLabel, .form1Part formLabel {
+        font-size: .8824em;
+    }
+
+.form3Part fieldset {
+    padding: 5px;
+}
+
+.form3Part {
+    background: #F2F2F2;
+    border: 1px solid #D3D3D3;
+    float: left;
+    margin: 0 20px 15px 0;
+}
+
+#form3PartAdvLimitSort {
+}
+
+    #form3PartAdvLimitSort label {
+        display: table-cell;
+        float: left;
+        padding-right: 5px;
+        width: 5em;
+    }
+
+    #form3PartAdvLimitSort select {
+        margin-left: 2px;
+        width: 144px;
+    }
+
+.form3PartAbove {
+    display: inline-block;
+    padding: 10px 10px 0;
+}
+
+.form3PartBelow {
+    background: #FFFFFF url('tile_vgradient.jpg') repeat-x scroll left top;
+    clear: both;
+    margin-top: 1em;
+}
+
+.formLogin label {
+    display: block;
+    padding-top: 3px;
+}
+
+.formLeft {
+    float: left;
+    padding: 10px 10px 10px;
+}
+
+    .formLeft td {
+        vertical-align: top;
+    }
+
+.formRight {
+    float: left;
+    padding: 10px;
+    width: 300px;
+}
+
+    .formRight td {
+    }
+
+    .formRight th {
+        padding-right: 10px;
+        text-align: right;
+        vertical-align: top;
+    }
+
+.formFieldsetInner, #accessibleForm .formFieldsetInner {
+    margin-top: 12px;
+}
+
+.formMultiSelect {
+    display: inline;
+}
+
+.fullPage {
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    text-align: left;
+}
+
+.pageContent div.helpContent {
+    padding-bottom: 12em;
+}
+
+.helpContent h3 {
+    font-size: 1.1em;
+    margin-bottom: 0px;
+}
+
+.helpContent h4 {
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+
+.helpContent p {
+    margin: 5px 0;
+}
+
+.helpContent ul, .helpContent ol {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.helpExample, .helpTopics {
+    background: #FFFFFF url(tile_vgradient.jpg) repeat-x scroll left top;
+    border: 1px solid #D3D3D3;
+}
+
+.helpExample {
+    margin: 5px 33px;
+    padding: 5px;
+}
+
+.helpTopics {
+    padding: 5px;
+    width: 30em;
+}
+
+    .helpTopics li {
+        list-style-type: none;
+    }
+
+.helpExample h4 {
+    margin-top: 0px;
+}
+
+.pageContentInner .helpSubhead {
+    border-top: 4px solid #E8E8E8;
+    margin: 45px 0 5px;
+}
+
+.holdingsDivider {
+    border: 1px solid #D3D3D3;
+    margin: 3px 0;
+}
+
+.illform #accessibleForm form legend {
+    font-weight: normal;
+}
+
+.illform .formButtonArea input {
+    font-size: 76%;
+}
+
+.illform .formButtonArea {
+    text-align: right;
+}
+
+.illform .formLeft {
+    width: 19em;
+}
+
+.illform .formLeft {
+    width: 460px;
+}
+
+.illform td {
+    padding: .5em 6px 0 0;
+    text-align: left;
+}
+
+.illform label {
+    float: right;
+}
+
+.illform fieldset label {
+    float: none;
+}
+
+.itemSelect {
+    width: 50em;
+}
+
+    .itemSelect br, .volumeSelect br {
+        line-height: 1px;
+    }
+
+    .itemSelect form > input {
+        margin: 8px 0 0;
+    }
+
+.libinfoLeft {
+    float: left;
+    margin: 0 20px 0 2px;
+}
+
+.libinfoRight {
+    float: left;
+}
+
+    .libinfoRight ul {
+        padding-left: 15px;
+    }
+
+    .libinfoRight li {
+    }
+
+.loggedInMessage {
+    color: #999999;
+    font-size: .8em;
+    font-style: normal;
+    float: right;
+    margin: 1px 5px 0 0;
+}
+
+.loggedInMoreInfo {
+    display: none;
+    position: absolute;
+    top: -5000px;
+    right: -5000px;
+}
+
+.login h1 {
+    border-bottom: 1px dotted #D3D3D3;
+    margin: 0 5em 0 0;
+}
+
+.loginForm {
+    background: #F2F2F2;
+    float: right;
+    margin: 15px;
+    width: 40%;
+}
+
+    .loginForm fieldset {
+        border: 3px solid #E7E7E7;
+        color: #444444;
+        margin: 0 6px 0 6px;
+    }
+
+/**M**/
+
+/* landing page search : mainmenu.html (and some srchhelp_X.html) */
+
+.mainmenu #search, #main-search.advanced {
+    background-color: #ebebeb;
+    border: 1px solid #626466;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+    .mainmenu #search .form-group {
+        margin: 10px;
+        font-size: 1.2em;
+    }
+
+        .mainmenu #search .form-group label {
+            margin-right: 5px;
+        }
+
+    .mainmenu #search input[type="submit"] {
+        display: block;
+        margin: 20px auto 0 auto;
+    }
+
+#more {
+    margin-top: 35px;
+}
+
+    #more a {
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+#more-options {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-control {
+    font-size: 16px;
+}
+
+.form-control {
+    font-size: 16px;
+}
+
+#main-search.advanced .daterange {
+    text-align: center;
+}
+
+#main-search.advanced {
+    text-align: center;
+}
+
+    #main-search.advanced legend {
+        border-bottom: none;
+    }
+
+.advancedsearch .availLimMessage {
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.advancedsearch .limits input[type="checkbox"] {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#main-search.advanced fieldset {
+    margin: 0 auto;
+    text-align: left;
+    display: inline-block;
+}
+
+#main-search.advanced .formEntryArea label, #main-search.advanced .formEntryArea select {
+    display: inline;
+    margin-top: 0;
+}
+
+#search .accessibleAddInfo {
+    vertical-align: bottom;
+}
+
+.submits {
+    margin-top: 10px;
+}
+
+.mainMenuAdvSearch {
+    float: right;
+    font-size: 80%;
+}
+
+.mainMenuContentLeft {
+    float: left;
+    margin-right: 15px;
+    margin-left: 30px;
+}
+
+.mainMenuContentRight {
+    float: left;
+}
+
+    .mainMenuContentRight ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+    .mainMenuContentRight li {
+        margin: 0px 0px 15px 0px;
+    }
+
+.mainSearch {
+    text-align: center;
+    float: left;
+}
+
+    .mainSearch img {
+        width: 100%;
+    }
+
+    .mainSearch h1 {
+        float: none;
+        color: #990000;
+    }
+
+    .mainSearch .form1Part {
+        float: none;
+        margin-top: 36px;
+        text-align: center;
+    }
+
+        .mainSearch .form1Part
+
+        .searchtext a {
+            float: right;
+            color: #990000;
+            padding-top: 10px;
+            padding-right: 25px;
+            font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+    .mainSearch .form1Part {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+#.minHeight {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.minHeight {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.msg td {
+    padding-top: 3px;
+}
+
+.mylistsSavePage {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+    .mylistsSavePage form, .mylistsSavePage .pageMainAreaHeader, .mylistsSavePage .msg {
+        margin: 10px;
+    }
+
+    .mylistsSavePage form {
+        padding: 10px;
+        color: #000000;
+        float: none;
+    }
+
+    .mylistsSavePage .pageMainAreaHeader {
+        font-size: 1.3333em;
+        font-weight: bold;
+    }
+
+.navigationRow a:link, .navigationRow a:visited {
+    color: #a6192e;
+    font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+    font-weight: bold;
+    padding: 6px 5px 3px 0px;
+    text-decoration: none;
+    width: auto;
+}
+
+.navigationRow a:active, .navigationRow a:hover {
+    text-decoration: underline;
+}
+
+.navigationRow {
+    margin: 0;
+}
+
+.navigationRow, .navigationRowRecord {
+    clear: both;
+    text-align: center;
+}
+
+    .navigationRow > form, .navigationRowNoForm {
+        margin-top: 0px;
+        margin-bottom: 0;
+        background-color: transparent;
+    }
+
+    .navigationRow noscript h2, .bibSearchHistory noscript h2 {
+        font-size: 1em;
+        margin: -3px 10px 0 0;
+        color: #FF0000;
+    }
+
+    .navigationRow select, .navigationrow option {
+        position: absolute;
+        right: 40px;
+        top: 65px;
+    }
+
+    .navigationRow select {
+        font-size: .83333em;
+        width: 200px;
+    }
+
+.bodywrapper {
+    width: 100%;
+}
+
+.pageContent {
+    width: 100%;
+    clear: none;
+    float: left;
+    margin-left: 4px;
+}
+
+    .pageContent > br {
+        display: none;
+    }
+
+.pageContentInner > br {
+    display: none;
+}
+
+.pageContentInner {
+    margin: 0 20px;
+}
+
+    .pageContentInner h1 {
+        font-size: 1.3333em;
+    }
+
+        .pageContentInner h1 img {
+            vertical-align: bottom;
+        }
+
+    .pageContentInner h2 {
+        font-size: 1.1667em;
+        margin-top: 10px;
+    }
+
+.pageContentInnerBarePage {
+    padding: 12px 20px;
+}
+
+.pageContentInnerProxyForm {
+    position: relative;
+    left: 10em;
+    text-align: left;
+    width: 65%
+}
+
+.pat br {
+    display: inline;
+    line-height: 1px;
+}
+
+.wmtd {
+    margin-left: 10px;
+}
+
+#content {
+    background: #ffffff;
+}
+
+#patActionsLinksList li {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0px;
+}
+
+#patActionsLinksList {
+    margin: 0 10px 0 0;
+    padding: 0px;
+    font-size: 1em;
+}
+
+/* Override ProStyles.css styles applied to pat divs */
+.patActionsLinks, .patNameAddress, .patHelp, .patLeft, .patFuncArea {
+    border: 0;
+    clear: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    float: none;
+    width: auto;
+}
+
+.patActionsLinks {
+    float: left;
+    background: #FFFFFF;
+    display: inline;
+    margin: 0px 0px 20px 20px;
+    padding: 10px 0 5px;
+    width: 21.33em;
+}
+
+    .patActionsLinks a:link, .patActionsLinks a:visited {
+        clear: both;
+        color: #014184;
+        font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        width: auto;
+    }
+
+    .patActionsLinks a:active, .patActionsLinks a:hover {
+        text-decoration: underline;
+    }
+
+.patActionsLinks, .patTop, .patFuncArea {
+    border: 1px solid #ECECEC;
+    outline: 5px solid #FFF;
+    padding: 5px;
+}
+
+#patButFines a {
+    background: #FFFFFF url('ico_payment.gif') no-repeat top left;
+    margin-left: 5px;
+    padding-left: 25px;
+    line-height: 1.8em;
+}
+
+#patButHolds a {
+    background: #FFFFFF url('ico_redflag.gif') no-repeat top left;
+    margin-left: 5px;
+    padding-left: 25px;
+    line-height: 1.8em;
+}
+
+#patButChkouts a {
+    background: #FFFFFF url('ico_books.gif') no-repeat top left;
+}
+
+#patButBookings a {
+    background: #FFFFFF url('ico_checkbox.gif') no-repeat top left;
+    margin-left: 5px;
+    padding-left: 25px;
+    line-height: 1.8em;
+}
+
+#patButFines a, #patButHolds a, #patButChkouts a, #patButBookings a {
+    margin-top: 3px;
+    margin-left: 0px;
+    padding-left: 28px;
+    line-height: 30px;
+}
+
+#patButFines, #patButHolds, #patButChkouts, #patButBookings {
+}
+
+.patActionItem a {
+    height: 27px;
+    display: block;
+}
+
+.patHelp {
+    border-top: 1px dotted #D3D3D3;
+    margin-top: 10px;
+}
+
+.patFloat {
+    background: #FFFFFF url('tile_pat3.jpg') repeat-x top left;
+    height: 700px;
+}
+
+    .patFloat .button img {
+        margin-top: 3px;
+    }
+
+    .patFloat .buttonText {
+        margin-left: 3px;
+    }
+
+.patFuncArea {
+    background: #FFFFFF;
+    float: left;
+    margin-left: 20px;
+    width: 600px;
+    margin-bottom: 18px;
+}
+
+    .patFuncArea a {
+        text-decoration: none;
+        display: table-cell;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .patFuncArea table a {
+        margin-right: 0px;
+    }
+
+    .patFuncArea img {
+        padding: 0;
+        vertical-align: text-bottom;
+    }
+
+.patFunc {
+    border: 0;
+    border-spacing: 0;
+    clear: both;
+    margin: 10px 0;
+}
+
+    .patFunc td {
+        padding: 5px;
+        font-size: .8824em;
+        border-bottom: 1px solid #D3D3D3;
+    }
+
+td.patFuncFinesDetailAmt {
+    font-size: .83333em;
+    font-weight: bold;
+}
+
+.patFuncFinesDetailDate {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: .83333em;
+    letter-spacing: 1px;
+    word-spacing: .5em;
+    font-weight: bold;
+}
+
+.patFuncFinesDetailDateLabel {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: .83333em;
+    letter-spacing: 1px;
+    word-spacing: .5em;
+    font-weight: bold;
+}
+
+td.patFuncFinesDetailType {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: .83333em;
+    letter-spacing: 1px;
+    word-spacing: .5em;
+    font-weight: bold;
+}
+
+.patFuncFinesEntryDetail td {
+    border-bottom: 1px solid #eee;
+}
+
+.patFuncFinesEntryTitle {
+    color: #202020;
+    background: #F8F8F8;
+}
+
+    .patFuncFinesEntryTitle em {
+        font-style: normal;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+td.patFuncFinesTotal {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: .83333em;
+    letter-spacing: 1px;
+    word-spacing: .5em;
+    font-weight: bold;
+}
+
+tr.patFuncFinesTotal {
+    background: #ECECEC;
+}
+
+.patFuncFinesTotalAmt em {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: .83333em;
+    letter-spacing: 1px;
+    word-spacing: .5em;
+    font-weight: bold;
+}
+
+.patFuncFinesTotalLabel em {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: .83333em;
+    letter-spacing: 1px;
+    word-spacing: .5em;
+    font-weight: bold;
+}
+
+.patFuncHeaders {
+    background: #ECECEC;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+    .patFuncHeaders th {
+        font-size: .8088em;
+    }
+
+.patFuncRenewCount {
+    font-style: italic;
+    color: red;
+}
+
+th.patFuncTitle, tr.patFuncTitle {
+    background: #FFFFFF url('tile_header.jpg') repeat-x bottom left;
+    border: 1px solid #D1D8DD;
+    font-weight: bold;
+    font-size: .8824em;
+    padding: 2px;
+}
+
+.patFuncTitle {
+    font-weight: bold;
+}
+
+    .patFuncTitle a {
+        color: #202020;
+    }
+
+.on_ice td, .on_ice a, .on_ice select {
+    color: #999999;
+}
+
+.patTop {
+    float: left;
+    background: #FFFFFF;
+    display: inline;
+    margin: 20px;
+    width: 350px;
+}
+
+td.progInfoLabel {
+    color: #767C70;
+    font-weight: bold;
+    padding-right: 25px;
+    text-align: right;
+    vertical-align: baseline;
+    width: 30%;
+}
+
+.popupContentInner {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.popupFormHeading, .barePageHeading {
+    margin-top: 0px;
+}
+
+.rateHelp td {
+    padding: 0 8px 8px 0;
+}
+
+.rateLabel {
+    position: absolute;
+    left: -1000px;
+    top: -1000px;
+}
+
+.rateData {
+    margin-left: 9%;
+}
+
+.relSearchLink img {
+}
+
+.relSearch {
+    padding: 0 10%;
+    text-align: left;
+    font-size: .83333em;
+}
+
+    .relSearch h1 {
+        font-size: 1.333em;
+        color: #767C70;
+        margin-top: 0px;
+    }
+
+    .relSearch h2 {
+        font-size: 1.667em;
+        color: #767C70;
+        border-top: 1px dotted #767C70;
+        margin: 0;
+    }
+
+.requestForm {
+    width: 45em;
+    font-weight: bold;
+}
+
+    .requestForm fieldset {
+        font-weight: normal;
+        padding-left: 5px;
+    }
+
+    .requestForm .formButtonArea {
+        margin-left: 0;
+    }
+
+    .requestForm #itemreq {
+        margin: 9px 9px 3px 3px;
+    }
+
+    .requestForm #artreq {
+        margin: 9px 3px 3px 9px;
+    }
+
+    .requestForm strong {
+        font-style: italic;
+    }
+
+.requestMultiItems {
+    margin: 10px;
+    clear: both;
+}
+
+    .requestMultiItems td {
+        border: 1px solid white;
+    }
+
+    .requestMultiItems td {
+        border-top: 1px solid #ECECEC;
+        border-bottom: none;
+        vertical-align: top;
+    }
+
+.requestMultiPatform center {
+    text-align: left;
+}
+
+.requestNonretDetails {
+    font-size: 85%;
+}
+
+.requestResult br {
+    line-height: 1px;
+}
+
+.requestResult table {
+    display: none;
+}
+
+.requestResult font {
+    font-size: 1.4em;
+}
+
+.resourceDisplayContentMain {
+    width: 68%;
+}
+
+.resourceDisplayBibs {
+    margin-bottom: 20px;
+}
+
+.pageContent > a > #resourcelink {
+    float: right;
+    margin-right: 10px;
+}
+
+.recordPager {
+    float: right;
+}
+
+    .recordPager a {
+        font-weight: bold;
+    }
+
+.resourcePager {
+    width: 10em;
+    margin-left: auto;
+}
+
+table.resourceResource {
+    margin: 15px;
+    width: 95%;
+}
+
+table.reserveBibs {
+    margin: 25px 0 20px 15%;
+    width: 75%;
+}
+
+.bibDisplayReviews .default {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.reviewContent {
+}
+
+.reviewContent {
+    margin: 8px 0 8px 8px;
+}
+
+.reviewDate {
+    color: #767C70;
+}
+
+.reviewLinks {
+    font-size: 1em;
+    margin: 0 0 4px 8px;
+}
+
+#bibDisplayBody .reviewLinks a:link, #bibDisplayBody .reviewLinks a:active, #bibDisplayBody .reviewLinks a:visited {
+    color: #369699;
+}
+
+.rssArea div, .rssArea span {
+    padding: 0;
+}
+
+.rssArea {
+    border-top: 8px solid #E8F2F9;
+    margin-top: 1em;
+}
+
+div.rssChannelEntries {
+    border: none;
+    background: #FFFFFF;
+}
+
+.rssChannelEntry br {
+    display: none;
+}
+
+.rssChannelEntry span {
+    display: block;
+}
+
+.rssChannelEntry {
+    border-top: 1px solid #ECECEC;
+}
+
+.rssChannelEntryDesc, .rssChannelEntryDate {
+    margin: 0.1em 20px 0 20px;
+}
+
+.rssChannelEntryHead {
+    display: block;
+    margin: 0.2em 20px 0;
+}
+
+.rssChannelImage img {
+    margin: 0.5em 0 0 20px;
+}
+
+.rssChannelTitle {
+    margin: 0.5em 20px 0.3em;
+    clear: both;
+    display: block;
+}
+
+#searcharg {
+}
+
+.searchNav {
+    background: #ffffff;
+    margin: 0;
+}
+
+#searchNavMenu {
+    margin-bottom: -3px;
+    text-align: right;
+}
+
+.searchNavBut {
+    vertical-align: bottom;
+    margin: 3px 10px 3px 5px;
+}
+
+#skipNav a, #cproSkipNav a:hover, #cproSkipNav a:visited {
+    position: absolute;
+    left: 0px;
+    top: -5000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+    #skipNav a:active, #skipNav a:focus {
+        position: static;
+        width: auto;
+        height: auto;
+        margin-bottom: 3px;
+        background: #FFFFFF;
+    }
+
+#specializedSearch {
+    vertical-align: bottom;
+    margin-bottom: 3px;
+}
+
+/* Staff view */
+
+.pageContent > table em {
+    margin-left: 15px;
+}
+
+.pageContent > table .browseList em {
+    margin-left: 0px;
+}
+
+.pageContent table {
+    border-color: #D3D3D3;
+    border-width: 0px;
+}
+
+.pageContent > table th {
+    padding-left: 5px;
+}
+
+    .pageContent > table th.bibVolLabel {
+        padding-left: 4px;
+    }
+
+.resourceScreen table {
+    margin: 5px 10px;
+    width: 95%;
+}
+
+.resourceScreen .bibSearchtool {
+    text-align: center;
+}
+
+.pageContent > div .bibSearchtool {
+    margin-bottom: 10px;
+    border-color: #D3D3D3;
+    border-style: solid;
+    border-width: 0 0 1px;
+}
+
+/* end staff */
+
+.testLinkedDocs img {
+    border: 0;
+}
+
+.tipsTable caption {
+    margin-top: 0px;
+}
+
+.topLinks a {
+    float: right;
+}
+
+.topLogo {
+}
+
+.topLogoSmall img {
+    width: 100%;
+    border: 0;
+    margin-top: 0px;
+}
+
+.topLogoSmall a:link, .topLogoSmall a:visited {
+    background: #FFFFFF;
+    padding: 0;
+}
+
+#.topLinks {
+    float: right;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.topLinks {
+    float: right;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#topLinksList a:link, #topLinksList a:visited {
+    color: #1367A7;
+    font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+    font-weight: bold;
+    padding: 6px 15px 0px 15px;
+    text-decoration: none;
+    width: auto;
+}
+
+#topLinksList a:active, #topLinksList a:hover {
+    background: #F2F2F2;
+    color: #0091FF;
+    text-decoration: underline;
+}
+
+#topLinksList li {
+    list-style: none;
+    padding: 0;
+    display: inline;
+}
+
+#topLinksList {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    font-size: .9em;
+    display: inline;
+}
+
+#topMyLibraryList {
+    display: inline;
+    line-height: 2.4em;
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+}
+
+#topMyLibraryList, #toplogoMoreNav {
+    font-size: .9167em;
+}
+
+    #topMyLibraryList a:link, #topMyLibraryList a:visited, #toplogoMoreNav a:link, #toplogoMoreNav a:visited {
+        color: #1367A7;
+        font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+        font-weight: bold;
+        padding: 6px 15px 3px 15px;
+        text-decoration: none;
+        width: auto;
+    }
+
+    #topMyLibraryList a:active, #topMyLibraryList a:hover, #toplogoMoreNav a:active, #toplogoMoreNav a:hover {
+        background: #F2F2F2;
+        color: #0091FF;
+        text-decoration: underline;
+    }
+
+    #topMyLibraryList li {
+        list-style: none;
+        padding: 0;
+        display: inline;
+    }
+
+.topNavClear {
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+
+#topMyLibraryList {
+    width: 100%;
+}
+
+/*#topMyLibraryHeader h1 {  color: #767C70; display: inline; float:left; font-family:Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif; font-size: .9167em; margin:0; padding:6px 10px 3px 10px; text-decoration:none; width:auto; } */
+#topMyLibraryHeader h1 {
+    position: absolute;
+    left: -9999px;
+    line-height: 0px;
+}
+
+/*Toplogo optional dropdown menus*/
+
+#toplogoMoreNav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+    #toplogoMoreNav a {
+    }
+
+    #toplogoMoreNav a {
+        text-decoration: none;
+    }
+
+    #toplogoMoreNav li li a {
+        display: block;
+        font-weight: normal;
+        padding: 0 10px 3px;
+    }
+
+        #toplogoMoreNav li li a:hover {
+            text-decoration: underline;
+        }
+
+    #toplogoMoreNav li {
+        position: relative;
+        cursor: default;
+        background-color: white;
+        margin-right: 1em;
+        margin-top: 5px;
+        float: left;
+    }
+
+        #toplogoMoreNav li#first {
+        }
+
+        #toplogoMoreNav li#last {
+        }
+
+        #toplogoMoreNav li ul {
+            position: absolute;
+            visibility: hidden;
+            font-weight: normal;
+            padding: 0.5em 0 1em 0;
+            border: solid 1px #D3D3D3;
+            border-top: none;
+            background: #FFFFFF;
+            white-space: nowrap;
+            z-index: 99;
+        }
+
+        #toplogoMoreNav li > ul {
+            top: auto;
+            left: auto;
+        }
+
+        #toplogoMoreNav li li {
+            display: block;
+            float: none;
+            background-color: transparent;
+            border: 0;
+        }
+
+        #toplogoMoreNav li ul li {
+            margin: 0;
+        }
+
+        #toplogoMoreNav li:hover ul, li.over ul {
+            visibility: visible;
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+/*End optional dropdown menus*/
+
+/*Begin Left Navigation (added by IWU)*/
+
+.leftnav {
+    width: 70%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+
+ul#navigation {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+    ul#navigation li {
+        font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        list-style: none;
+        background-color: none;
+        border-top: none;
+        text-align: left;
+        margin: 0;
+    }
+
+        ul#navigation li a {
+            display: block;
+            color: #a6192e;
+            text-decoration: none;
+            padding: 1px;
+            border-bottom: none /*solid 1px #39f*/;
+            border-right: none /*solid 1px #39f*/;
+        }
+
+#navigation a:link, a:visited {
+    color: #a6192e;
+}
+
+#navigation a:hover, a:active {
+    color: #a6192e;
+}
+
+#navigation a:hover {
+    background-color: #dbdbdb;
+}
+
+/*End Left Navigation*/
+
+.volumeSelect fieldset {
+    padding: 10px;
+}
+
+.volumeSelect form {
+    margin-top: 10px;
+}
+
+.wblinktext {
+}
+
+.wblinkdisplay .linkdisplay {
+    padding: 0px;
+}
+
+/* Section 3: WebBridge */
+/* table striping styles */
+/* for brief citation */
+
+td.odd {
+    background: #f2f2f2;
+}
+
+td.highlight {
+    background: #FFFFE4;
+}
+
+
+/* for browse entries */
+
+tr.odd {
+    background: #f2f2f2;
+}
+
+tr.highlight {
+    background: #FFFFE4;
+}
+
+.webbridge a:link, .webbridge a:visited {
+    color: #a6192e;
+    font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+    font-weight: bold;
+    padding: 6px 5px 3px 0px;
+    text-decoration: none;
+    width: auto;
+}
+
+.webbridge a:active, .webbridge a:hover {
+    text-decoration: underline;
+}
+
+.webbridgeButtonArea {
+    float: right;
+    margin: 10px 0;
+}
+
+#webbridgeLogo {
+    display: inline;
+    margin: 10px 0;
+    float: left;
+}
+
+.patFuncArea > form fieldset {
+    border: none;
+    margin: 5px 0 0;
+}
+
+    .patFuncArea > form fieldset legend {
+        background: #FFFFFF url('tile_header.jpg') repeat-x bottom left;
+        border: 1px solid #D1D8DD;
+        font-weight: bold;
+        font-size: .8824em;
+        padding: 2px;
+        padding: 2px 20em 2px 2px;
+    }
+
+    .patFuncArea > form fieldset .formLabel {
+        display: block;
+        padding-top: 3px;
+    }
+
+/*Webbridge respanel*/
+
+.citation {
+    background-color: #FFFFFF;
+    padding: 5px 5px 5px 0;
+    margin: 10px 10px 10px 0;
+}
+
+.citationtitle {
+    font-weight: bold;
+    color: #aa1002;
+    font-size: 1.2em;
+}
+
+.coverage em {
+    font-style: normal;
+}
+
+.wbfieldinsert {
+    font-size: .9em;
+    margin: 0 20px 0;
+}
+/* Section 2: WebBridge */
+
+/*special header elements*/
+#WBGlobalLinks {
+    background-color: #980000;
+}
+
+#WBbanner a, #WBribbon a {
+    border-bottom: none;
+}
+
+#WBbanner img, #WMribbon img {
+    border: none;
+    background: none;
+}
+
+#WBribbon {
+    background: #4D000A url(/screens/toplogoWB.png) no-repeat left; /*	changed	*/
+    clear: both;
+    height: 63px;
+    width: 100%;
+    position: relative;
+    margin: 0px auto;
+    padding: 0px;
+    z-index: 1000000000;
+    font-size: 12px; /*	new	*/
+}
+
+    #WBribbon #WBLogo {
+        display: block;
+        height: 53px;
+        width: 230px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    #WBribbon #SiteHome {
+        display: block;
+        height: 53px;
+        width: 600px;
+        position: absolute;
+        top: 5px;
+        left: 275px;
+    }
+
+    #bannerright, #WBribbon #bannerright {
+        float: right;
+        width: 160px;
+        margin: -6em 15px 0 0;
+        font-size: 100%;
+        color: #ffffff;
+    }
+/*ArticleFinder styles*/
+.AFformLeft {
+    float: left;
+    padding: 10px 10px 10px;
+    width: 450px;
+}
+
+.AFformRight {
+    float: left;
+    padding: 10px;
+    width: 375px;
+}
+
+div.ALinkFormElement {
+    clear: both;
+    padding-top: .25em;
+}
+
+span.ALinkFormLabel {
+    float: left;
+    width: 125px;
+    padding-top: .3em;
+    text-align: right;
+    font-weight: bold;
+}
+
+span.ALinkFormLabelRight {
+    float: left;
+    width: 50px;
+    padding-top: .3em;
+    text-align: right;
+    font-weight: bold;
+}
+
+span.ALinkFormInput {
+    text-align: left;
+    margin-left: 1em;
+}
+
+span.ALinkRequired {
+    color: #980000;
+    font-weight: bold
+}
+
+span.ALinkSuggested {
+    color: #F90;
+    font-weight: bold
+}
+
+
+.webbridgeButtonArea {
+    float: right;
+    margin: 0;
+    text-align: right;
+    width: 46%;
+}
+
+#webbridgeLogo {
+    display: inline;
+    margin: 5px 0;
+    float: left;
+    width: 46%;
+}
+
+/* the following .wbbody styles are used to style the wp_panel.html pop up page */
+
+
+.wbbody {
+    text-align: left;
+    padding: 1em;
+}
+
+.wbresourcelist br {
+    display: none;
+}
+
+.majaxJholdings br {
+    display: block;
+}
+
+
+/* the following styles are used on both the wp_panel.html and the resserv_panel.html pages */
+
+.wbcitation { /*formats user citations on  resserv_panel */
+    margin: 5px 0 0 0;
+    padding: 10px 10px 2px 10px;
+    background-color: #eaecf1;
+}
+
+.wbnumbers { /*formats issn/isbn and doi, if present */
+    margin: 0;
+    padding: 2px 10px 10px 10px;
+    background-color: #eaecf1;
+    text-align: right;
+}
+
+.wbcategory { /*headings for categories - going and coming*/
+    font-weight: bold;
+    font-size: 125%;
+    padding: 1em 0 .3em;
+    0;
+}
+
+.wbsectionhead { /* was used on both wppanel and resserv_panel - manual section heads for Request a Copy etc but switched to h3s instead 120815 BJ*/
+    margin: 0;
+    padding: 2px 0 2px 1em;
+    font-weight: bold;
+}
+/* contents of the WBHEADERTEXT wwwoption */
+.wbheading {
+    margin: 0;
+}
+
+/*Webbridge resservpanel special styles*/
+
+.wblinktext a {
+    font-size: 110%;
+}
+
+st
+
+.coverage {
+    margin: -20px 0 -0 30px !important;
+}
+
+.coverage em {
+    font-style: normal !important;
+}
+
+.wbfieldinsert {
+    margin: 0 20px 5px 20px;
+}
+
+    .wbfieldinsert br {
+        line-height: 0px;
+    }
+
+.noresources {
+    font-weight: bold;
+}
+
+.wbnoresources {
+    display: block;
+    margin: 3px 0;
+}
+/* Entire WebBridge Resource Definition Link Display -in Bibdisplay.html*/
+
+
+.bibResourceTable {
+    margin-top: 30px;
+}
+
+.bibResourceTableEntry .wblinkdisplay #gbs { /*wblinkdisplay also defined above in wbbody - white background*/
+    padding: 16px 0;
+}
+
+.bibResourceTableEntry, .browseResourceTableEntry {
+    text-align: left;
+    font-weight: 500;
+}
+
+.bibResourceTableEntry {
+    padding: 0;
+}
+
+    .bibResourceTableEntry center {
+        text-align: left;
+    }
+
+.report-an-error a:before, .request-from-storage a:before, .request-razorrush a:before, .request-course-reserve a:before, .request-docshelp a:before, .check-internet-archive a:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.report-an-error a:before {
+    content: "\f094";
+}
+
+.request-from-storage a:before {
+    content: "\f0d1";
+}
+
+.request-docshelp a:before {
+    content: "\f74d";
+}
+
+.request-razorrush a:before {
+    content: "\f0e7";
+}
+
+.bibResourceTable .bibResourceTableEntry .request-razorrush a, .bibResourceTable .bibResourceTableEntry a.request-razorrush-info {
+    display: inline-block;
+}
+
+a.request-razorrush-info .fa-info-circle {
+    font-size: 1.2em;
+    margin-left: 6px;
+}
+
+.request-course-reserve a:before {
+    content: "\f017";
+    font-weight: 400;
+}
+
+.check-internet-archive a:before {
+    content: "\f66f";
+}
+
+/* Course Display  */
+
+
+table.reserveBibs input[type="submit"] {
+    color: #a00 !important;
+    background-color: transparent;
+    font-weight: 600;
+    border: none;
+    text-decoration: underline;
+}
+
+/* Section 3: SMS and Email Panel Styles */
+
+
+#email-form-container, #sms-form-container {
+    background-color: #fff;
+    width: 70%;
+    min-width: 600px;
+    margin: 100px auto;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    border: 1px solid #000;
+    position: relative;
+    padding: 30px 30px 16px;
+    overflow: hidden;
+    /*height: 520px;*/
+}
+
+
+    #email-form-container .close, #sms-form-container .close {
+        opacity: 1;
+        margin-top: -14px;
+    }
+
+        #email-form-container .close:before, #sms-form-container .close:before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+            content: "\f00d";
+            color: #333;
+        }
+
+
+
+/*Used for page counter on text messages*/
+#counter {
+    align: right;
+}
+
+.formEntryArea label, .formEntryArea td {
+    display: block;
+}
+
+.formEntryArea label {
+    margin-top: 10px;
+}
+
+.daterange legend, label {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.daterange legend {
+    border: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.daterange {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 10px;
+    background: #f2f2f4;
+    margin-bottom: 16px;
+}
+
+.limits .formEntryArea {
+    display: inline-block;
+    padding: 20px 20px 0 20px;
+    font-size: 1.2em;
+}
+
+.alphaERM {
+    font-size: 1.3em;
+}
+
+
+
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+
+/* Section 4: Responsive and print media queries */
+
+
+media (min-width: 768px)
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+@media (min-width: 768px) .container {
+    width: 750px;
+}
+
+@media (min-width: 480px) {
+    .formEntryArea label, .formEntryArea td {
+        display: inline-block;
+    }
+
+    .formEntryArea select, .formEntryArea input[type="text"] {
+        margin-left: 3px;
+    }
+
+    .formEntryArea td select, .formEntryArea td input[type="text"] {
+        margin-left: 5px;
+    }
+
+    .formEntryArea td, .formEntryArea select, .formEntryArea input[type="text"] {
+        margin-top: 10px;
+    }
+
+        .formEntryArea td label, .formEntryArea td select, .formEntryArea td input[type="text"] {
+            margin-top: 0;
+        }
+
+    .stacked .formEntryArea label, .stacked .formEntryArea td, .stacked .formEntryArea select, .stacked .formEntryArea input[type="text"] {
+        width: 45%;
+    }
+
+        .stacked .formEntryArea td label, .stacked .formEntryArea td select, .stacked .formEntryArea td input[type="text"] {
+            width: 100%;
+        }
+
+    .stacked .formEntryArea label {
+        text-align: right;
+    }
+
+    .stacked .formButtonArea {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .browseSearchtool select, .browseSearchtool input[type="text"] {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .browseSearchtool input[type="submit"] {
+        margin: 10px 0;
+    }
+
+    #content textarea {
+        width: 100%;
+    }
+
+    #loggedin, #not-loggedin {
+        text-align: left;
+        padding: 5px 0;
+    }
+
+    #bibDisplayBody .bibResourceSidebar.resource-display .mediaicon p, .bibDisplayContentMain .mediaicon {
+        text-align: left;
+    }
+
+        #bibDisplayBody .bibResourceSidebar.resource-display .mediaicon p:before, .bibDisplayContentMain .mediaicon p:before {
+            display: inline-block;
+            font-size: 2em;
+            margin-right: 5px;
+        }
+
+    #gbs img {
+        float: left;
+    }
+
+    .bibDisplayItemsMain form input[type=submit] {
+        white-space: normal;
+        max-width: 60%;
+        float: right;
+        text-align: left;
+        line-height: 1em;
+        background-color: #ddd;
+        border-radius: 0;
+        color: #333 !important;
+    }
+
+    .bibDisplayItemsMain form input {
+        display: table-cell
+    }
+
+    .bibDisplayItemsMain form {
+        margin: 10px 0;
+        background-color: #f2f2f4;
+        padding: 5px;
+        display: table-cell
+    }
+
+        .bibDisplayItemsMain form:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    .mylistsSelect {
+        display: block;
+    }
+
+    .browseHeaderMedia, .browseEntryMedia, .browseSubEntryMedia.mediaicon {
+        display: none;
+    }
+
+    #not-loggedin #help {
+        margin-top: 0;
+    }
+
+    #header-bg {
+        height: 216px;
+    }
+}
+
+@media (min-width: 768px) {
+    .mainmenu #search, #more {
+        text-align: center;
+    }
+
+    #searcharg {
+        width: 300px;
+    }
+
+    .alternatives #spellcheck {
+        float: left;
+    }
+
+    .alternatives .findmore {
+        float: right;
+    }
+
+    .alternatives:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
+    .limits {
+        text-align: center;
+    }
+
+    #main-nav {
+        margin-top: 116px;
+    }
+
+    #bibDisplayBody .bibResourceSidebar.resource-display {
+        float: right;
+        margin: 0 0 20px 20px;
+    }
+
+    .mylistsSelect {
+        margin-left: 20px;
+    }
+
+    .resourceDisplayContentMain .bibDetail, #resource_details {
+        width: 75%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    aside .request-button {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .has-sidebar aside {
+        padding-top: 10px;
+    }
+
+    #site-heading {
+        margin-top: .3em;
+    }
+
+    aside .navigationRowRecord a:after, #citeoclc a:after, #smsfeatures a:after {
+        content: " | ";
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #citeoclc, #smsfeatures, #emailfeatures {
+        display: inline-block;
+    }
+
+    aside .navigationRowRecord a:first-child:after, aside .navigationRowRecord a:last-child:after {
+        content: "";
+        margin: 0;
+    }
+
+    aside .navigationRowRecord a {
+        white-space: nowrap;
+    }
+
+    .bibResourceTableEntry #resourcelink .button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .resourceLicenseEntry a, .bibDetail #bibRecordLink a {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        word-break: break-word;
+    }
+    /* breaks long URLS so that they don't push out of the container width */
+}
+
+@media (min-width: 992px) {
+    #site-heading {
+        margin-top: .25em !important;
+    }
+
+    aside .navigationRowRecord a, #citeoclc a, #smsfeatures a, #emailfeatures a, .bibResourceTable .bibResourceTableEntry a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    aside .request-button {
+        padding: 15px 30px;
+        position: relative;
+        font-size: 1.1em;
+    }
+
+    .form2Part {
+        position: relative;
+    }
+
+        .form2Part:after {
+            display: table;
+            content: "";
+            clear: both
+        }
+
+        .form2Part .formLeft {
+            width: 50%;
+            float: left;
+            position: relative;
+            padding-right: 20px;
+        }
+
+        .form2Part .formRight {
+            width: 50%;
+            position: relative;
+            padding-left: 30px;
+            margin-left: 50%;
+        }
+
+        .form2Part:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            height: 100%;
+            width: 1px;
+            background-color: #ddd;
+            display: block;
+        }
+}
+
+
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+
+@media print {
+    html, body, div, p, a, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, address, dl, dt, dd, ol, ul, li {
+        font-family: Times, 'Times New Roman', serif;
+    }
+
+        a[href]:after {
+            content: '' !important;
+        }
+
+        table th, table td {
+            padding: 0;
+        }
+
+    tr {
+        page-break-inside: avoid;
+    }
+
+    table {
+        page-break-inside: auto;
+    }
+
+    .navigationRow, .browseSearchtool, .bibSearchtool, .browsePager, .bibPager, .browseSaveJump, .briefcitMark, .briefcitRequest, .briefcitFullRecord, .briefcitItemsHeader, .bibSearch, .bibSearchHistory, .navigationRowRecord, .bibResourceSidebar, #not-loggedin, #loggedin, #resourcelink, header, footer, aside#helpmenu, .loggedInMessage, #request-buttons {
+        display: none;
+    }
+
+    .briefcitLeft {
+        width: 30px;
+    }
+
+    .briefcitEntryNum {
+        font-size: 12pt;
+    }
+
+    .briefcitDetail, .briefcitAuthDetail {
+        margin-left: 0;
+    }
+
+    .briefcitRow {
+        border-bottom: 1px solid #000;
+    }
+
+    .bibDisplayPermLink, .resourceHistory, .recordPager, .button, button, .SMbutton {
+        display: none;
+    }
+
+    #bib_items {
+        margin-top: 10px !important;
+    }
+
+    h3.items-header {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+}
+/*Footer Styles*/
+footer {
+    width: 100%;
+    background-color: #737373;
+    color: #fff;
+    padding: 50px 25px;
+    border-top: 3px solid #a6192e;
+}
+
+    footer a, footer a:hover, footer a:active, footer a:visited {
+        color: #ffffff;
+    }
+
+@media (max-width: 767px) {
+    .footer-logo {
+        margin-bottom: 35px;
+    }
+}
+/* end mobile media query */
+
+.footer-social {
+    margin-bottom: 18px;
+}
+
+a.footer-social-link {
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #737373 !important;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-right: 10px;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: all 0.35s ease-in-out;
+    width: 32px;
+    height: 32px;
+}
+
+    a.footer-social-link:hover, a.footer-social-link:active {
+        opacity: 1;
+    }
+
+.footer-address p {
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 20px;
+}
+
+.copyright-row {
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+    margin-top: 70px;
+    padding-top: 18px;
+    text-align: right;
+}
+
+.LRCfooter {
+    padding-bottom: 25px;
+}
+
+footer .panel-title {
+    margin-bottom: 8px;
+}
+
+.socialIcons {
+    padding-right: 7px;
+}
+
+.list-group-item {
+    border: 0px !important;
+}
+
+.alert {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+}
+/* Help pages */
+
+#helpmenu ul, #helpmenu li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#helpmenu > ul > li {
+    margin-top: 26px;
+}
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+
+

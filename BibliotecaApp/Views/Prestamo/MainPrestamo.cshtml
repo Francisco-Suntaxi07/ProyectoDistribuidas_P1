@@ -9,11 +9,268 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>MainPrestamo</title>
+    <title>Prestamos</title>
+
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/css/SecondaryPage.css" rel="stylesheet" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function OpenPopupCenter(pageURL, title, w, h) {
+            var left = (screen.width - w) / 2;
+            var top = (screen.height - h) / 4;  // for 25% - devide by 4  |  for 33% - devide by 3
+            var targetWin = window.open(pageURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+        }
+    </script>
 </head>
 <body>
-    <div> 
-        <h1>HOLA MUNDOS</h1>
+    <a href="https://oak.indwes.edu" class="navbar-brand" title="Indiana Wesleyan University - Lewis A. Jackson Library">
+        <img class="img-fluid" src="https://libapps.s3.amazonaws.com/accounts/13288/images/IWULogoJLB.png" alt="IWU Jackson Library" width="186" height="111">
+    </a>
+    <span class="navbar-text container-fluid" style="font-size:2em;color:#626466;padding-left:10px">Library Catalog</span>
+
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon custom-toggler"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- Links -->
+
+        <ul class="navbar-nav justify-content-end rs">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-question"></i> Help</a>
+                <div class="dropdown-menu">
+                    <a onclick="OpenPopupCenter('https://indwes.libanswers.com/chat/widget/cd4d7ba5ad1e83cbcb2e1e704e7fcf74', 'Chat', 400, 340);" class="dropdown-item"><i class="fa fa-comments-o"></i> Chat</a>
+                    <a href="mailto:jacksonlibrary@indwes.edu" class="dropdown-item"><i class="fa fa-envelope-o"></i> Email</a>
+                    <a href="https://indwes.libanswers.com/" class="dropdown-item"><i class="fa fa-question"></i> FAQ</a>
+                    <a href="https://indwes.libguides.com/LibraryStaff" class="dropdown-item"><i class="fa fa-address-book-o"></i> Staff Directory</a>
+                    <a href="https://indwes.libguides.com/appointment" class="dropdown-item"><i class="fa fa-calendar"></i> Research Appointment</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-home"></i> Back to Library Home Page</a>
+                <div class="dropdown-menu">
+                    <a href="https://library.indwes.edu" class="dropdown-item">Jackson Library Home Page</a>
+                    <a href="https://ocls.indwes.edu" class="dropdown-item">OCLS Home Page</a>
+                </div>
+            </li>
+        </ul>
+        <!-- Links end -->
     </div>
+    </nav>
+
+    <div class="navbar navbar-default iwu-gray">
+        <div class="container  justify-content-center">
+            <ul class="nav  topLinks">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://oak.indwes.edu/patroninfo~S0/"><i class="fa fa-user"></i>&nbspMy Library Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/screens/ResearchGuides.html"><i class="fa fa-search-plus"></i> Research Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://illiad.indwes.edu"><i class="fa fa-globe"></i> Interlibrary Loan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/screens/AskUs.html"><i class="fa fa-question"></i>&nbspAsk Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- <div id="not-loggedin" class="alert alert-info">
+
+    <div class="container">
+
+    <form name="searchoptions" id="searchoptions" class="form-inline">
+    <select name="searchby"  class="form-control" onChange="window.location=document.searchoptions.searchby.options[document.searchoptions.searchby.selectedIndex].value"> <option selected value="">Search by...</option>
+    <option value="/search/Y">Keyword</option>
+    <option value="/search/X">Advanced Keyword</option>
+    <option value="/search/t">Title</option>
+    <option value="/search/s">Journal Title</option>
+    <option value="/search/y">Database Name</option>
+    <option value="/search/a">Author</option>
+    <option value="/search/d">Subject</option>
+    <option value="/search/y">Database Subject</option>
+    <option value="/search/q">Genre and Form</option>
+    <option value="/search/r">Course Reserves</option>
+    <option value="/screens/helpaudio.html">Audio</option>
+    <option value="/screens/helpvideo.html">Video</option>
+    <option value="/screens/helperesources.html">eBooks & eJournals</option>
+    <option value="/screens/helpmanuscripts.html">Manuscripts</option>
+    <option value="/screens/helpscores.html">Musical Scores</option>
+    <option value="/screens/helpdissertations.html">Theses & Dissertations</option>
+    <option value="/search/i">ISSN / ISBN</option>
+    <option value="/search/c">Call Number</option>
+    <option value="/search/m">Dewey Decimal #</option>
+    <option value="/search/g">Government Documents #</option>
+    <option value="/search/j">Su Docs #</option>
+    <option value="/search/o">OCLC #</option>
+    <option value="/search/,">Record #</option>
+    <option value="/search/b">Item Barcode</option>
+    <option value="/">Start Over</option>
+    </select>
+    </form>
+
+    </div>
+
+    </div> -->
+    <!--not-loggedin-->
+
+    <div class="container" id="main-container">
+        <div id="content">
+
+            <h1>Find Books and More...</h1>
+
+            <form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();" class=" mainmenu">
+
+                <input type="hidden" id="iiiFormHandle_1" />
+                <div class="form-group row">
+                    <label for="searchtype" class="accesibleAdd">Search Type</label>
+                    <div class="col">
+
+                        <select name="searchtype" id="searchtype" class="form-control">
+                            <option value="X" selected="selected">Keyword</option>
+                            <option value="t">Title</option>
+                            <option value="a">Author</option>
+                            <option value="d">Subject</option>
+                            <option value="f">Genre and Form</option>
+                            <option value="o">OCLC Number</option>
+                            <option value="c">Call Number</option>
+                            <option value="i">ISSN / ISBN / Music Number</option>
+                            <option value="g">Government Document Number</option>
+                            <option value="q">Author and Title</option>
+                            <option value="r">Course Reserves</option>
+                            <option value="p">Course Reserves by Professor</option>
+                        </select>
+                    </div>
+
+                    <!--{nosort}-->
+                    <label for="searcharg">Search Term</label>
+                    <div class="col">
+
+                        <input maxlength="75" name="searcharg" id="searcharg" class="form-control" autofocus />
+                    </div>
+
+                    <div class="col">
+                        <label for="searchscope" class="accessibleAddInfo">Collection</label>
+                        <select id="b" name="b" class="form-control">
+                            <option value="">ANY</option>
+                            <option value="arch ">Archives</option>
+                            <option value="main ">Circulating Collection</option>
+                            <option value="curr">Curriculum Materials</option>
+                            <option value="ebook">Electronic Books</option>
+                            <option value="trade">Juvenile Tradebooks</option>
+                            <option value="media">Media Services</option>
+                            <option value="micfm">Microfilm</option>
+                            <option value="micfc">Microfiche</option>
+                            <option value="perio">Periodicals</option>
+                            <option value="ref  ">Reference</option>
+                            <option value="resrv">Reserves--Circulation Desk</option>
+                            <option value="teach">Teaching Tools</option>
+                            <option value="wes  ">Wesleyana Collection</option>
+                        </select>
+
+
+                    </div>
+                </div>
+                <input type="submit" value="Search" onclick="iiiDoSubmit_1();" />
+                <!--{scope}-->
+
+
+
+
+            </form>
+
+            <div class="row" id="more">
+                <div class="col-md-6">
+
+
+
+                    <p><a href="/search/X">Advanced Keyword Search</a></p>
+
+                </div>
+
+                <div class="col-md-6">
+
+
+
+                    <select name="more-options" id="more-options" class="form-control">
+                        <option value="">Special Formats</option>
+                        <option value="/screens/helpdissertations.html">Dissertations & Theses</option>
+                        <option value="/screens/helpcurriculum.html">Curriculum</option>
+                        <option value="/screens/helperesources.html">eBooks</option>
+                        <option value="/screens/helpscores.html">Musical Scores</option>
+                        <option value="/screens/helpteachingtools.html">Teadhing Tools</option>
+                        <option value="/screens/helpvideo.html">Video</option>
+
+                    </select>
+
+
+                </div>
+            </div>
+
+            <!--{botlogo}-->
+
+            <script>$( document ).ready(function() {
+   $('#more-options').change(function() {
+        window.location = $(this).find("option:selected").val();
+    });
+});</script>
+
+            <script type="text/javascript" language="javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
+            <!--end toplogo.html-->
+            <!-- begin botlogo.html file -->
+        </div> <!-- /#content -->
+        <p> </p>
+    </div> <!-- /#main-container -->
+    <!-- BEGIN: Custom Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div id="s-lg-col-1" class="col-xs-12 col-sm-4 col-md-3 footer-logo">
+                    <img class="img-responsive" src="https://libapps.s3.amazonaws.com/accounts/13288/images/Web_-_Horizontal_White_Master_Logo.png" alt="Indiana Wesleyan University - Lewis A. Jackson Library">
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 offset-sm-4 offset-md-6">
+                    <div class="footer-social">
+                        <a class="footer-social-link" href="https://www.facebook.com/IWUJacksonLibrary?fref=ts/" target="_blank" aria-label="facebook"><i class="fa fa-facebook-f"></i></a>
+                        <a class="footer-social-link" href="https://www.instagram.com/iwujacksonlibrary/" target="_blank" aria-label="instagram"><i class="fa fa-instagram"></i></a>
+                        <a class="footer-social-link" onclick="OpenPopupCenter('https://indwes.libanswers.com/chat/widget/cd4d7ba5ad1e83cbcb2e1e704e7fcf74', 'Chat', 400, 340);"><i class="fa fa-comment"></i></a>
+                        <a class="footer-social-link" href="https://indwes.libanswers.com/" aria-label="ask us a question"><i class="fa fa-question"></i></a>
+                    </div>
+                    <div class="footer-address">
+                        <p>
+                            <strong>Lewis A. Jackson Library</strong><br />
+                            4201 S. Washington St.<br />
+                            Marion, IN 46970<br />
+                            765.677.2955
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 copyright-row">
+                    <p class="text-right">© 2021 <a href="https://www.indwes.edu">Indiana Wesleyan University</a>. All rights reserved.  |  <a href="#">Privacy</a>  |  <a href="#">Accessibility</a></p>
+                </div>
+            </div>
+        </div>
+    </footer><!-- END: Custom Footer -->
+    <span style="display:none">
+        <!-- end botlogo.html file -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
