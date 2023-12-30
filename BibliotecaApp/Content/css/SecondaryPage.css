@@ -1,41 +1,4 @@
-﻿/*<!-- IWU Jackson Library Styles -->*/
-/*<!-- This File Last Changed:May 24, 2021-->*/
-/* *******************************************************************
-Organization:
-Section 1 - Additions
-Section 2 - named styles listed in alphabetical order
-Section 3 - WebBridge
-Section 4 - Responsive and print media queries
-
-Color Scheme:
-2009B:
-background dark gray: #4D4D4D
-text dark gray: #444444
-blue: #1367A7
-link blue: #A6192E
-link active: #A6192E
-light blue: #E8F2F9
-yellow hover color: #FFFFE4
-Gray for borders and borders serving as horizontal rules: #D3D3D3
-
-Font Size Quick Reference
-(Default browser font size) * Body Font Size = Default Display Size 
-16pt * .85 = 13.6pt
-Find your desired size in ems by dividing your desired font-size in points by the present size of the font.
-For instance, 12pt font = 12/13.6 = .8824em.
-For 12pt, apply .8824em
-For 11pt, apply .8088em
-For 10pt, apply .7353em
-
-********************************************************************** */
-/*Section 1 -- additiona --2021 --*/
-
-
-/* general appearance */
-/* See also Web Option BODYPARAM */
-
-/* Stylesheet to use for dynamic Web pages */
-/* is set by Web Option STYLESHEET */
+﻿
 
 a .dropdown-list (color:red!important;)
 /* Section 1   Additions and Global Styles*/
