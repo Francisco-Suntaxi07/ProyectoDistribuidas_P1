@@ -23,7 +23,6 @@ namespace BibliotecaApp.Services
         public async Task<List<PrestamoModel>> ListaPrestamos()
         {
             List<PrestamoModel> listaPrestamos = new List<PrestamoModel>();
-
             try
             {
                 using (HttpClient client = new HttpClient())

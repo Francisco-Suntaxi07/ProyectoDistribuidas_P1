@@ -1,4 +1,4 @@
-﻿
+﻿@model List<BibliotecaApp.Models.PrestamoModel>
 @{
     Layout = null;
     ViewBag.Title = "MainPrestamo";
@@ -129,8 +129,7 @@
 
     <div class="container" id="main-container">
         <div id="content">
-
-            <h1>Find Books and More...</h1>
+            <h1>Buscabas algun prestamo?</h1>
 
             <form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();" class=" mainmenu">
 
@@ -188,25 +187,59 @@
                 <!--{scope}-->
             </form>
 
+            <div>
+                <div class="card">
+                    <div class="card-header">
+                        @ViewBag.Message
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID de Prestamo</th>
+                                    <th scope="col">ID de Cliente</th>
+                                    <th scope="col">ID de Libro</th>
+                                    <th scope="col">Fecha de Prestamo</th>
+                                    <th scope="col">Fecha de Devolucion</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Multa</th>
+                                    <th scope="col">Observaciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <th scope="row">@item.id_prestamo</th>
+                                        <td>@item.id_cliente</td>
+                                        <td>@item.id_libro</td>
+                                        <td>@item.fecha_prestamo.ToString("dd/MM/yyyy")</td>
+                                        <td>@item.fecha_devolucion.ToString("dd/MM/yyyy")</td>
+                                        <td>@item.precio_prestamo</td>
+                                        <td>@item.multa_prestamo</td>
+                                        <td>@item.observaciones_prestamo</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-
-
-
+            </div>
 
             <!--{botlogo}-->
+        <script>$( document ).ready(function() {
+           $('#more-options').change(function() {
+                window.location = $(this).find("option:selected").val();
+            });
+        });</script>
 
-            <script>$( document ).ready(function() {
-   $('#more-options').change(function() {
-        window.location = $(this).find("option:selected").val();
-    });
-});</script>
-
-            <script type="text/javascript" language="javascript"><!--//--><![CDATA[//><!--
-try { document.forms[0].searcharg.focus(); }
-catch(err) {}
-//--><!]]></script>
-            <!--end toplogo.html-->
-            <!-- begin botlogo.html file -->
+                    <script type="text/javascript" language="javascript"><!--//--><![CDATA[//><!--
+        try { document.forms[0].searcharg.focus(); }
+        catch(err) {}
+        //--><!]]></script>
+                    <!--end toplogo.html-->
+                    <!-- begin botlogo.html file -->
         </div> <!-- /#content -->
         <p> </p>
     </div> <!-- /#main-container -->
