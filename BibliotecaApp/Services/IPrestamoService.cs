@@ -11,13 +11,13 @@ namespace BibliotecaApp.Services
     {
         Task<List<PrestamoModel>> ListaPrestamos();
       
-        Task<PrestamoModel> BuscarPrestamo();
+        Task<PrestamoModel> BuscarPrestamo(string id);
 
-        Task<bool> GuardarPrestamo();
+        Task<bool> GuardarPrestamo(PrestamoModel prestamoModel);
 
-        Task<bool> EditarPrestamo();
+        Task<bool> EditarPrestamo(PrestamoModel prestamoModel);
 
-        Task<bool> EliminarPrestamo();
+        Task<bool> EliminarPrestamo(string id);
 
     }
 }
