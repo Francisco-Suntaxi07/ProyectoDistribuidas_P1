@@ -190,9 +190,11 @@
             <div>
                 <div class="card">
                     <div class="card-header">
-                        @ViewBag.Message
+                        @ViewBag.Acction
                     </div>
                     <div class="card-body">
+
+                        <a asp-action="BuscarPrestamo" asp-controller="Prestamo" asp-route-id="" class="btn btn-success btn-sm" >Nuevo Prestamo</a>
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -218,7 +220,11 @@
                                         <td>@item.precio_prestamo</td>
                                         <td>@item.multa_prestamo</td>
                                         <td>@item.observaciones_prestamo</td>
-                                    </tr>
+                                        <td>
+                                            <a asp-action="BuscarPrestamo" asp-controller="Prestamo" asp-route-id="@item.id_prestamo" class="btn btn-warning btn-sm">Editar</a>
+                                            <a asp-action="EliminarPrestamo" asp-controller="Prestamo" asp-route-id="@item.id_prestamo" class="btn btn-danger btn-sm">Eliminar</a>
+                                        </td>
+</tr>
                                 }
                             </tbody>
                         </table>
