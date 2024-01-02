@@ -1,0 +1,86 @@
+﻿@model BlibliotecaApp.Models.PrestamoModel
+@{
+    Layout = null;
+    ViewBag.Title = "FormularioPrestamo";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FormularioPrestamo</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">@ViewBag.Acction</h1>
+        @using (Html.BeginForm("GuardarPrestamo", "Prestamo", FormMethod.Post))
+        {
+
+            <div class="mb-3">
+                <label class="form-label">ID de Prestamo</label>
+                @Html.TextBoxFor(Model => Model.id_prestamo, new { @class = "form-control", maxlength = "8" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">ID del Libro</label>
+                @Html.TextBoxFor(Model => Model.id_libro, new { @class = "form-control", maxlength = "8" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">ID del Cliente</label>
+                @Html.TextBoxFor(Model => Model.id_cliente, new { @class = "form-control", maxlength = "10" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Fecha de Prestamo</label>
+                @Html.TextBoxFor(Model => Model.fecha_prestamo, new { @class = "form-control", type = "date" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">ID fecha_devolucion Libro</label>
+                @Html.TextBoxFor(Model => Model.fecha_devolucion, new { @class = "form-control", type = "date" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Precio del prestamo</label>
+                @Html.TextBoxFor(Model => Model.precio_prestamo, new { @class = "form-control", type = "text", pattern = @"\d+(\.\d{0,2})?" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Multa</label>
+                @Html.TextBoxFor(Model => Model.multa_prestamo, new { @class = "form-control", type = "text", pattern = @"\d+(\.\d{0,2})?" })
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Observaciones</label>
+                @Html.TextAreaFor(Model => Model.observaciones_prestamo, new { @class = "form-control", maxlength = "256" })
+            </div>
+            
+            <div class="container text-center">
+                <button type="submit" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                        <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                        <path d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+                    </svg> Guardar
+                </button>
+            </div>
+         }
+         </div>
+
+    <!-- s@Html.HiddenFor(model => model.id_prestamo)-->
+    <!--{botlogo}  x@using (Html.BeginForm("ProcesarFormulario", "Prestamo", FormMethod.Post))
+    {
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" value="ValorPorDefecto" />
+
+
+        <input type="submit" value="Enviar" />
+    }-->
+
+</body>
+</html>
+
+
