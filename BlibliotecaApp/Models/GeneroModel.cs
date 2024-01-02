@@ -2,18 +2,18 @@
 
 namespace BlibliotecaApp.Models
 {
-    public class EditorialModel
+    public class GeneroModel
     {
         [Key]
         [StringLength(8)]
-        public string id_editorial { get; set; }
+        public string id_genero { get; set; }
 
         [Required]
         [StringLength(64)]
-        public string nombre_editorial { get; set; }
+        public string nombre_genero { get; set; }
 
         [Required]
         [StringLength(64)]
-        public string direccion_editorial { get; set; }
+        public string descripcion_genero { get; set; }
     }
 }

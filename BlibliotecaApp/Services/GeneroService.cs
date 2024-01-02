@@ -9,30 +9,30 @@ using System.Threading.Tasks;
 
 namespace BlibliotecaApp.Services
 {
-    public class EditorialService : IEditorialService
+    public class GeneroService : IGeneroService
     {
         private static string _baseUrl;
 
-        public EditorialService()
+        public GeneroService()
         {
             _baseUrl = ConfigurationManager.AppSettings["ApiUrlRecLibros"];
         }
 
-        public async Task<List<EditorialModel>> ListaEditoriales()
+        public async Task<List<GeneroModel>> ListaGeneros()
         {
-            List<EditorialModel> listaEditoriales = new List<EditorialModel>();
+            List<GeneroModel> listaGeneros = new List<GeneroModel>();
             try
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    string uri = $"{_baseUrl}/Editoriales";
+                    string uri = $"{_baseUrl}/Generos";
                     HttpResponseMessage response = await client.GetAsync(uri);
 
                     // Verificar si la solicitud fue exitosa (código de estado 200)
                     if (response.IsSuccessStatusCode)
                     {
                         var jsonResponse = await response.Content.ReadAsStringAsync();
-                        listaEditoriales = JsonConvert.DeserializeObject<List<EditorialModel>>(jsonResponse);
+                        listaGeneros = JsonConvert.DeserializeObject<List<GeneroModel>>(jsonResponse);
                     }
                     else
                     {
@@ -44,25 +44,25 @@ namespace BlibliotecaApp.Services
             {
                 Console.WriteLine($"Error en la solicitud: {ex.Message}");
             }
-            return listaEditoriales;
+            return listaGeneros;
 
         }
 
-        public async Task<EditorialModel> BuscarEditorial(string id)
+        public async Task<GeneroModel> BuscarGenero(string id)
         {
-            EditorialModel editorialModel = new EditorialModel();
+            GeneroModel generoModel = new GeneroModel();
             try
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    string uri = $"{_baseUrl}/Editoriales/{id}";
+                    string uri = $"{_baseUrl}/Generos/{id}";
                     HttpResponseMessage response = await client.GetAsync(uri);
 
                     // Verificar si la solicitud fue exitosa (código de estado 200)
                     if (response.IsSuccessStatusCode)
                     {
                         var jsonResponse = await response.Content.ReadAsStringAsync();
-                        editorialModel = JsonConvert.DeserializeObject<EditorialModel>(jsonResponse);
+                        generoModel = JsonConvert.DeserializeObject<GeneroModel>(jsonResponse);
                     }
                     else
                     {
@@ -74,19 +74,19 @@ namespace BlibliotecaApp.Services
             {
                 Console.WriteLine($"Error en la solicitud: {ex.Message}");
             }
-            return editorialModel;
+            return generoModel;
         }
 
-        public async Task<bool> GuardarEditorial(EditorialModel editorialModel)
+        public async Task<bool> GuardarGenero(GeneroModel generoModel)
         {
             bool auxResponse = false;
             try
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    string uri = $"{_baseUrl}/Editoriales";
+                    string uri = $"{_baseUrl}/Generos";
 
-                    var content = new StringContent(JsonConvert.SerializeObject(editorialModel), Encoding.UTF8, "application/json");
+                    var content = new StringContent(JsonConvert.SerializeObject(generoModel), Encoding.UTF8, "application/json");
 
                     HttpResponseMessage response = await client.PostAsync(uri, content);
 
@@ -109,15 +109,15 @@ namespace BlibliotecaApp.Services
             return auxResponse;
         }
 
-        public async Task<bool> EditarEditorial(EditorialModel editorialModel)
+        public async Task<bool> EditarGenero(GeneroModel generoModel)
         {
             try
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    string uri = $"{_baseUrl}/Editoriales/{editorialModel.id_editorial}";
+                    string uri = $"{_baseUrl}/Autores/{generoModel.id_genero}";
 
-                    var content = new StringContent(JsonConvert.SerializeObject(editorialModel), Encoding.UTF8, "application/json");
+                    var content = new StringContent(JsonConvert.SerializeObject(generoModel), Encoding.UTF8, "application/json");
 
                     HttpResponseMessage response = await client.PutAsync(uri, content);
 
@@ -140,14 +140,16 @@ namespace BlibliotecaApp.Services
             }
         }
 
-        public async Task<bool> EliminarEditorial(string id)
+
+
+        public async Task<bool> EliminarGenero(string id)
         {
             bool auxResponse = false;
             try
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    string uri = $"{_baseUrl}/Editoriales/{id}";
+                    string uri = $"{_baseUrl}/Generos/{id}";
                     HttpResponseMessage response = await client.DeleteAsync(uri);
 
                     // Verificar si la solicitud fue exitosa (código de estado 200)

@@ -15,8 +15,8 @@ namespace BlibliotecaApp.Controllers
         {
             bool AuxC = TempData["AuxC"] != null ? (bool)TempData["AuxC"] : true;
 
-            List<EditorialModel> editorialesList = await _editorialService.ListaEditoriales();
-            return View(editorialesList);
+            List<EditorialModel> editorialList = await _editorialService.ListaEditoriales();
+            return View(editorialList);
         }
 
         public async Task<ActionResult> FormularioEditorial(string id)
@@ -28,14 +28,14 @@ namespace BlibliotecaApp.Controllers
 
             if (id != null)
             {
-                ViewBag.Acction = "Editar Autor";
+                ViewBag.Acction = "Editar Editorial";
                 auxP = !auxP;
                 TempData["AuxP"] = auxP;
                 editorialModel = await _editorialService.BuscarEditorial(id);
             }
             else
             {
-                ViewBag.Acction = "Nuevo Autor";
+                ViewBag.Acction = "Nueva Editorial";
                 auxP = auxP;
                 TempData["AuxP"] = auxP;
             }
@@ -43,19 +43,19 @@ namespace BlibliotecaApp.Controllers
             return View(editorialModel);
         }
 
-        /*[HttpPost]
         public async Task<ActionResult> GuardarEditorial(string id_editorial, string nombre_editorial, string direccion_editorial, EditorialModel editorialModel)
         {
             bool response = false;
-            bool AuxC = TempData["AuxC"] != null ? (bool)TempData["AuxC"] : true;
-            var auxAAAA = AuxC;
+            bool auxP = TempData["AuxP"] != null ? (bool)TempData["AuxP"] : true;
 
-            if (AuxC)
+            if (auxP)
             {
+                // Crear un nuevo editorial
                 response = await _editorialService.GuardarEditorial(editorialModel);
             }
             else
             {
+                // Editar editorial existente
                 response = await _editorialService.EditarEditorial(editorialModel);
             }
 
@@ -66,38 +66,8 @@ namespace BlibliotecaApp.Controllers
             else
             {
                 return RedirectToAction("MainEditorial");
-            }
-        }*/
-
-        [HttpPost]
-        public async Task<ActionResult> GuardarEditorial(string id_editorial, string nombre_editorial, string direccion_editorial, EditorialModel editorialModel)
-        {
-            bool response = false;
-            bool isEditMode = !string.IsNullOrEmpty(editorialModel.id_editorial);
-
-            if (isEditMode)
-            {
-                response = await _editorialService.EditarEditorial(editorialModel);
-            }
-            else
-            {
-                response = await _editorialService.GuardarEditorial(editorialModel);
-            }
-
-            if (response)
-            {
-                return RedirectToAction("MainEditorial");
-            }
-            else
-            {
-                // Manejo de errores si la operación falla
-                return View("FormularioEditorial", editorialModel);
             }
         }
-
-
-
-
 
         [HttpPost]
         public async Task<ActionResult> EliminarEditorial(string id)

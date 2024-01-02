@@ -123,6 +123,7 @@
     <Compile Include="Controllers\AutorController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\EditorialController.cs" />
+    <Compile Include="Controllers\GeneroController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PrestamoController.cs" />
     <Compile Include="Global.asax.cs">
@@ -131,14 +132,17 @@
     <Compile Include="Models\AutorModel.cs" />
     <Compile Include="Models\ClienteModel.cs" />
     <Compile Include="Models\EditorialModel.cs" />
+    <Compile Include="Models\GeneroModel.cs" />
     <Compile Include="Models\PrestamoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AutorService.cs" />
     <Compile Include="Services\ClienteService.cs" />
     <Compile Include="Services\EditorialService.cs" />
+    <Compile Include="Services\GeneroService.cs" />
     <Compile Include="Services\IAutorService.cs" />
     <Compile Include="Services\IClienteService.cs" />
     <Compile Include="Services\IEditorialService.cs" />
+    <Compile Include="Services\IGeneroService.cs" />
     <Compile Include="Services\IPrestamoService.cs" />
     <Compile Include="Services\PrestamoService.cs" />
   </ItemGroup>
@@ -234,6 +238,8 @@
     <Content Include="Views\Editorial\FormularioEditorial.cshtml" />
     <Content Include="Views\Autor\MainAutor.cshtml" />
     <Content Include="Views\Editorial\MainEditorial.cshtml" />
+    <Content Include="Views\Genero\MainGenero.cshtml" />
+    <Content Include="Views\Genero\FormularioGenero.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
