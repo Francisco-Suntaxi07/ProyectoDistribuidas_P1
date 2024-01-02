@@ -64,203 +64,147 @@
         <!-- Links end -->
     </div>
 
-
-    <div class="navbar navbar-default iwu-gray">
-        <div class="container  justify-content-center">
-            <ul class="nav  topLinks">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://oak.indwes.edu/patroninfo~S0/"><i class="fa fa-user"></i>&nbspMy Library Account</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/screens/ResearchGuides.html"><i class="fa fa-search-plus"></i> Research Guides</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://illiad.indwes.edu"><i class="fa fa-globe"></i> Interlibrary Loan</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/screens/AskUs.html"><i class="fa fa-question"></i>&nbspAsk Us</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
+    <hr class="border border-primary border-1 opacity-50">
     <div class="container" id="main-container">
         <div id="content">
-            <h1>Clientes de la Biblioteca</h1>
-
-            <form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();" class=" mainmenu">
-
-                <input type="hidden" id="iiiFormHandle_1" />
-                <div class="form-group row">
-                    <label for="searchtype" class="accesibleAdd">Search Type</label>
-                    <div class="col">
-
-                        <select name="searchtype" id="searchtype" class="form-control">
-                            <option value="X" selected="selected">Keyword</option>
-                            <option value="t">Title</option>
-                            <option value="a">Author</option>
-                            <option value="d">Subject</option>
-                            <option value="f">Genre and Form</option>
-                            <option value="o">OCLC Number</option>
-                            <option value="c">Call Number</option>
-                            <option value="i">ISSN / ISBN / Music Number</option>
-                            <option value="g">Government Document Number</option>
-                            <option value="q">Author and Title</option>
-                            <option value="r">Course Reserves</option>
-                            <option value="p">Course Reserves by Professor</option>
-                        </select>
-                    </div>
-
-                    <!--{nosort}-->
-                    <label for="searcharg">Search Term</label>
-                    <div class="col">
-
-                        <input maxlength="75" name="searcharg" id="searcharg" class="form-control" autofocus />
-                    </div>
-
-                    <div class="col">
-                        <label for="searchscope" class="accessibleAddInfo">Collection</label>
-                        <select id="b" name="b" class="form-control">
-                            <option value="">ANY</option>
-                            <option value="arch ">Archives</option>
-                            <option value="main ">Circulating Collection</option>
-                            <option value="curr">Curriculum Materials</option>
-                            <option value="ebook">Electronic Books</option>
-                            <option value="trade">Juvenile Tradebooks</option>
-                            <option value="media">Media Services</option>
-                            <option value="micfm">Microfilm</option>
-                            <option value="micfc">Microfiche</option>
-                            <option value="perio">Periodicals</option>
-                            <option value="ref  ">Reference</option>
-                            <option value="resrv">Reserves--Circulation Desk</option>
-                            <option value="teach">Teaching Tools</option>
-                            <option value="wes  ">Wesleyana Collection</option>
-                        </select>
-
-
-                    </div>
-                </div>
-                <input type="submit" value="Search" onclick="iiiDoSubmit_1();" />
-                <!--{scope}-->
-            </form>
-
-            <!--Ventana modal para agregar un prestamo-->
-            <div class="container-fluid">
-                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                   onclick="abrirModal('@Url.Action("FormularioPrestamo", "Prestamo", new { id = "" })')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-plus-fill" viewBox="0 0 16 16">
-                        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M8.5 7v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 1 0" />
-                    </svg> Nuevo Prestamo</a>
-            </div>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                        </div>
-                        <div class="modal-body">
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <h1>Clientes del establecimiento</h1>
             <br />
-            <!--Tabla de prestamos-->
             <div>
-                <div class="card">
-                    <div class="card-header">
-                        <h5>Lista de Prestamos</h5>
-                    </div>
-                    <div class="card-body">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col">ID de Prestamo</th>
-                                    <th scope="col">ID de Cliente</th>
-                                    <th scope="col">ID de Libro</th>
-                                    <th scope="col">Fecha de Prestamo</th>
-                                    <th scope="col">Fecha de Devolucion</th>
-                                    <th scope="col">Precio</th>
-                                    <th scope="col">Multa</th>
-                                    <th scope="col">Observaciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var item in Model)
-                                {
-                                    <tr>
-                                        <th scope="row">@item.id_prestamo</th>
-                                        <td>@item.id_cliente</td>
-                                        <td>@item.id_libro</td>
-                                        <td>@item.fecha_prestamo.ToString("dd/MM/yyyy")</td>
-                                        <td>@item.fecha_devolucion.ToString("dd/MM/yyyy")</td>
-                                        <td>@item.precio_prestamo</td>
-                                        <td>@item.multa_prestamo</td>
-                                        <td>@item.observaciones_prestamo</td>
-                                        <td>
-                                            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                               onclick="abrirModal('@Url.Action("FormularioPrestamo", "Prestamo", new { id = @item.id_prestamo })')">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
-                                                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001" />
-                                                </svg> Editar</a>
-                                                                       
-                                            @using (Html.BeginForm("EliminarPrestamo", "Prestamo", FormMethod.Post))
-                                            {
-                                                <br />
-                                                <input type="hidden" name="id" value="@item.id_prestamo" />
-                                                <button type="submit" class="btn btn-danger">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-x-fill" viewBox="0 0 16 16">
-                                                        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M6.854 7.146 8 8.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 9l1.147 1.146a.5.5 0 0 1-.708.708L8 9.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 9 6.146 7.854a.5.5 0 1 1 .708-.708" />
-                                                    </svg> Eliminar</button>
-                                            }
-                                        </td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
+                @using (Html.BeginForm("FormularioPrestamo", "Prestamo", FormMethod.Get))
+                {
+                    <input type="text" name="id" />
+                    <button type="submit" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg> Buscar
+                    </button>
+                }
             </div>
 
+            <div class="container" id="main-container">
+                <div id="content">
 
-            <script>
-                $(document).ready(function () {
-                    $('#more-options').change(function () {
-                        window.location = $(this).find("option:selected").val();
-                    });
-                });</script>
 
-            <script type="text/javascript" language="javascript">
+
+                    <!--Ventana modal para agregar un prestamo-->
+                    <div class="container-fluid">
+                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                           onclick="abrirModal('@Url.Action("FormularioPrestamo", "Prestamo", new { id = "" })')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-plus-fill" viewBox="0 0 16 16">
+                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M8.5 7v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 1 0" />
+                            </svg> Nuevo Prestamo
+                        </a>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <!--Tabla de prestamos-->
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Lista de Prestamos</h5>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID de Prestamo</th>
+                                            <th scope="col">ID de Cliente</th>
+                                            <th scope="col">ID de Libro</th>
+                                            <th scope="col">Fecha de Prestamo</th>
+                                            <th scope="col">Fecha de Devolucion</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">Multa</th>
+                                            <th scope="col">Observaciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <th scope="row">@item.id_prestamo</th>
+                                                <td>@item.id_cliente</td>
+                                                <td>@item.id_libro</td>
+                                                <td>@item.fecha_prestamo.ToString("dd/MM/yyyy")</td>
+                                                <td>@item.fecha_devolucion.ToString("dd/MM/yyyy")</td>
+                                                <td>@item.precio_prestamo</td>
+                                                <td>@item.multa_prestamo</td>
+                                                <td>@item.observaciones_prestamo</td>
+                                                <td>
+                                                    <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                       onclick="abrirModal('@Url.Action("FormularioPrestamo", "Prestamo", new { id = @item.id_prestamo })')">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+                                                            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001" />
+                                                        </svg> Editar
+                                                    </a>
+
+                                                    @using (Html.BeginForm("EliminarPrestamo", "Prestamo", FormMethod.Post))
+                                                    {
+                                                        <br />
+                                                        <input type="hidden" name="id" value="@item.id_prestamo" />
+                                                        <button type="submit" class="btn btn-danger">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-x-fill" viewBox="0 0 16 16">
+                                                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M6.854 7.146 8 8.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 9l1.147 1.146a.5.5 0 0 1-.708.708L8 9.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 9 6.146 7.854a.5.5 0 1 1 .708-.708" />
+                                                            </svg> Eliminar
+                                                        </button>
+                                                    }
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <script>
+                        $(document).ready(function () {
+                            $('#more-options').change(function () {
+                                window.location = $(this).find("option:selected").val();
+                            });
+                        });</script>
+
+                    <script type="text/javascript" language="javascript">
             <!--    // --> <![CDATA[//><!--
-                try { document.forms[0].searcharg.focus(); }
-                catch (err) { }
-                //--><!]]></script>
-            <!--end toplogo.html-->
-            <!-- begin botlogo.html file -->
-        </div> <!-- /#content -->
-    </div> <!-- /#main-container -->
+                        try { document.forms[0].searcharg.focus(); }
+                        catch (err) { }
+                        //--><!]]></script>
+                    <!--end toplogo.html-->
+                    <!-- begin botlogo.html file -->
+                </div> <!-- /#content -->
+            </div> <!-- /#main-container -->
+            <!-- Footer-->
+            <footer class="bg-light py-5">
+                <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2024 - Tu Biblioteca</div></div>
+            </footer>
 
-    <!-- Footer-->
-    <footer class="bg-light py-5">
-        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2024 - Tu Biblioteca</div></div>
-    </footer>
 
+            <span style="display:none" />
+            <!-- end botlogo.html file -->
+            <script>
+                function abrirModal(url) {
+                    // Cambiar la fuente del iframe dentro del modal
+                    $("#exampleModal").find(".modal-body").html('<iframe src="' + url + '" style="width:100%;height:500px;border:none;"></iframe>');
+                }
+            </script>
 
-    <span style="display:none" />
-    <!-- end botlogo.html file -->
-    <script>
-        function abrirModal(url) {
-            // Cambiar la fuente del iframe dentro del modal
-            $("#exampleModal").find(".modal-body").html('<iframe src="' + url + '" style="width:100%;height:500px;border:none;"></iframe>');
-        }
-    </script>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
