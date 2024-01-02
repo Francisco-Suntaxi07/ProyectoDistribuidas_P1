@@ -1,0 +1,199 @@
+﻿@model List<BlibliotecaApp.Models.AutorModel>
+@{
+    Layout = null;
+    ViewBag.Title = "MainAutor";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Autores</title>
+
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/css/SecondaryPage.css" rel="stylesheet" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+        function OpenPopupCenter(pageURL, title, w, h) {
+            var left = (screen.width - w) / 2;
+            var top = (screen.height - h) / 4;  // for 25% - devide by 4  |  for 33% - devide by 3
+            var targetWin = window.open(pageURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+        }
+    </script>
+</head>
+<body>
+    <a href="#" class="navbar-brand" title="Mi Libreria">
+        <img class="img-fluid" src="~/assets/logo.jpg" alt="Mi Libreria" width="186" height="111">
+    </a>
+    <span class="navbar-text container-fluid" style="font-family: Courier New; font-size: 4em; padding-left: 10px ">Autores</span>
+
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon custom-toggler"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- Links -->
+
+        <ul class="navbar-nav justify-content-end rs">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-question"></i> Help</a>
+                <div class="dropdown-menu">
+                    <a onclick="OpenPopupCenter('https://indwes.libanswers.com/chat/widget/cd4d7ba5ad1e83cbcb2e1e704e7fcf74', 'Chat', 400, 340);" class="dropdown-item"><i class="fa fa-comments-o"></i> Chat</a>
+                    <a href="mailto:jacksonlibrary@indwes.edu" class="dropdown-item"><i class="fa fa-envelope-o"></i> Email</a>
+                    <a href="https://indwes.libanswers.com/" class="dropdown-item"><i class="fa fa-question"></i> FAQ</a>
+                    <a href="https://indwes.libguides.com/LibraryStaff" class="dropdown-item"><i class="fa fa-address-book-o"></i> Staff Directory</a>
+                    <a href="https://indwes.libguides.com/appointment" class="dropdown-item"><i class="fa fa-calendar"></i> Research Appointment</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-home"></i> Back to Library Home Page</a>
+                <div class="dropdown-menu">
+                    <a href="https://library.indwes.edu" class="dropdown-item">Jackson Library Home Page</a>
+                    <a href="https://ocls.indwes.edu" class="dropdown-item">OCLS Home Page</a>
+                </div>
+            </li>
+        </ul>
+        <!-- Links end -->
+    </div>
+
+    <hr class="border border-primary border-1 opacity-50">
+    <div class="container" id="main-container">
+        <div id="content">
+            <h1>Autores Existentes en el Establecimiento</h1>
+            <br />
+            <div>
+                @using (Html.BeginForm("FormularioAutor", "Autor", FormMethod.Get))
+                {
+                    <input type="text" name="id" />
+                    <button type="submit" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg> Buscar
+                    </button>
+                }
+            </div>
+
+            <div class="container" id="main-container">
+                <div id="content">
+                    <!--Ventana modal para agregar un autor-->
+                    <div class="container-fluid">
+                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                           onclick="abrirModal('@Url.Action("FormularioAutor", "Autor", new { id = "" })')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-plus-fill" viewBox="0 0 16 16">
+                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M8.5 7v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 1 0" />
+                            </svg> Nuevo Autor
+                        </a>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <!--Tabla de autores-->
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Lista de Autores</h5>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID de Autor</th>
+                                            <th scope="col">Nombre de Autor</th>
+                                            <th scope="col">Nacionalidad de Autor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <th scope="row">@item.id_autor</th>
+                                                <td>@item.nombre_autor</td>
+                                                <td>@item.nacionalidad_autor</td>
+                                                <td>
+                                                    <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                       onclick="abrirModal('@Url.Action("FormularioAutor", "Autor", new { id = @item.id_autor })')">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+                                                            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001" />
+                                                        </svg> Editar
+                                                    </a>
+
+                                                    @using (Html.BeginForm("EliminarAutor", "Autor", FormMethod.Post))
+                                                    {
+                                                        <br />
+                                                        <input type="hidden" name="id" value="@item.id_autor" />
+                                                        <button type="submit" class="btn btn-danger">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-x-fill" viewBox="0 0 16 16">
+                                                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M6.854 7.146 8 8.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 9l1.147 1.146a.5.5 0 0 1-.708.708L8 9.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 9 6.146 7.854a.5.5 0 1 1 .708-.708" />
+                                                            </svg> Eliminar
+                                                        </button>
+                                                    }
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <script>
+                        $(document).ready(function () {
+                            $('#more-options').change(function () {
+                                window.location = $(this).find("option:selected").val();
+                            });
+                        });</script>
+
+                    <script type="text/javascript" language="javascript">
+            <!--    // --> <![CDATA[//><!--
+                        try { document.forms[0].searcharg.focus(); }
+                        catch (err) { }
+                        //--><!]]></script>
+                    <!--end toplogo.html-->
+                    <!-- begin botlogo.html file -->
+                </div> <!-- /#content -->
+            </div> <!-- /#main-container -->
+            <!-- Footer-->
+            <footer class="bg-light py-5">
+                <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2024 - Tu Biblioteca</div></div>
+            </footer>
+
+
+            <span style="display:none" />
+            <!-- end botlogo.html file -->
+            <script>
+                function abrirModal(url) {
+                    // Cambiar la fuente del iframe dentro del modal
+                    $("#exampleModal").find(".modal-body").html('<iframe src="' + url + '" style="width:100%;height:500px;border:none;"></iframe>');
+                }
+            </script>
+
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </div>
+    </div>
+</body>
+</html>
