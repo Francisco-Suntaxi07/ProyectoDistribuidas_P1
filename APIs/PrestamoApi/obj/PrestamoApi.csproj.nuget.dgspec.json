@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Francisco\\Desktop\\u\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\PrestamoApi.csproj": {}
+    "C:\\Users\\santy\\Documents\\ESPE\\GitProyecto\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\PrestamoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Francisco\\Desktop\\u\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\PrestamoApi.csproj": {
+    "C:\\Users\\santy\\Documents\\ESPE\\GitProyecto\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\PrestamoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Francisco\\Desktop\\u\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\PrestamoApi.csproj",
+        "projectUniqueName": "C:\\Users\\santy\\Documents\\ESPE\\GitProyecto\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\PrestamoApi.csproj",
         "projectName": "PrestamoApi",
-        "projectPath": "C:\\Users\\Francisco\\Desktop\\u\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\PrestamoApi.csproj",
-        "packagesPath": "C:\\Users\\Francisco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Francisco\\Desktop\\u\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\obj\\",
+        "projectPath": "C:\\Users\\santy\\Documents\\ESPE\\GitProyecto\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\PrestamoApi.csproj",
+        "packagesPath": "C:\\Users\\santy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\santy\\Documents\\ESPE\\GitProyecto\\ProyectoDistribuidas_P1\\APIs\\PrestamoApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Francisco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\santy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,16 +39,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -60,15 +50,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
