@@ -85,6 +85,7 @@ namespace BlibliotecaApp.Services
         public async Task<bool> CantidadLibro(LibroModel libroModel)
         {
             bool auxResponse = false;
+
             try
             {
                 using (HttpClient client = new HttpClient())

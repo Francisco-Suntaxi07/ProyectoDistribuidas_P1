@@ -189,6 +189,11 @@
                 function abrirModal(url) {
                     // Cambiar la fuente del iframe dentro del modal
                     $("#exampleModal").find(".modal-body").html('<iframe src="' + url + '" style="width:100%;height:500px;border:none;"></iframe>');
+
+                    $('#exampleModal').on('hidden.bs.modal', function () {
+                        // Recargar la página después de cerrar el modal
+                        window.location.reload();
+                    });
                 }
             </script>
         </div>
