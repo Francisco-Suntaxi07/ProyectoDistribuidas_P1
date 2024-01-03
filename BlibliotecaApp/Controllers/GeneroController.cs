@@ -63,11 +63,11 @@ namespace BlibliotecaApp.Controllers
 
             if (response)
             {
-                return RedirectToAction("MainGenero");
+                return RedirectToAction("FormularioGenero");
             }
             else
             {
-                return RedirectToAction("MainGenero");
+                return RedirectToAction("FormularioGenero");
             }
         }
 
