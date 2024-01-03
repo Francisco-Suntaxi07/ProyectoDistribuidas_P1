@@ -69,20 +69,22 @@ namespace BlibliotecaApp.Controllers
             //prestamoModel.multa_prestamo = Decimal.Parse(multa_prestamo);
             var auxob = prestamoModel.observaciones_prestamo;
 
-             /*PrestamoModel prestamo = new PrestamoModel();
-               prestamo.id_prestamo = "P006";
-               prestamo.id_libro = "L001";
-               prestamo.id_cliente = "1712345678";
+            /*PrestamoModel prestamo = new PrestamoModel();
+              prestamo.id_prestamo = "P006";
+              prestamo.id_libro = "L001";
+              prestamo.id_cliente = "1712345678";
 
-               DateTime fecha = DateTime.Parse("2008/09/05");
-               prestamo.fecha_prestamo = fecha;
-               DateTime fecha1 = DateTime.Parse("2008/09/05");
-               prestamo.fecha_devolucion = fecha1;
-               prestamo.precio_prestamo = 1.99m;
-               prestamo.multa_prestamo = 1.99m;
-               prestamo.observaciones_prestamo = "ningunaa";
+              DateTime fecha = DateTime.Parse("2008/09/05");
+              prestamo.fecha_prestamo = fecha;
+              DateTime fecha1 = DateTime.Parse("2008/09/05");
+              prestamo.fecha_devolucion = fecha1;
+              prestamo.precio_prestamo = 1.99m;
+              prestamo.multa_prestamo = 1.99m;
+              prestamo.observaciones_prestamo = "ningunaa";
 
-               response = await _prestamoService.GuardarPrestamo(prestamoModel);*/
+              response = await _prestamoService.GuardarPrestamo(prestamoModel);*/
+
+            
 
             if (auxP)
             {
@@ -95,6 +97,20 @@ namespace BlibliotecaApp.Controllers
 
             if (response)
             {
+                LibroModel libroModel = new LibroModel();
+                libroModel.id_libro = prestamoModel.id_libro;
+                libroModel.id_autor = "A001";
+                libroModel.id_genero = "GNo01";
+                libroModel.id_editorial = "E001";
+                libroModel.titulo_libro = "Harry Potter y la piedra filosofal";
+                DateTime fecha = DateTime.Parse("1997-06-26");
+                libroModel.fecha_publicacion = fecha;
+                libroModel.num_paginas = 368;
+                libroModel.estado_libro = "Disponible";
+                int auxCantidad = libroModel.cantidad_libro - 1;
+                libroModel.cantidad_libro = auxCantidad;
+
+                bool axuCOnulta = await _prestamoService.CantidadLibro(libroModel);
                 return RedirectToAction("MainPrestamo");
             }
             else

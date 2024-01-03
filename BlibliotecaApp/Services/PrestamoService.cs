@@ -82,6 +82,40 @@ namespace BlibliotecaApp.Services
             return prestamoModel;
         }
 
+        public async Task<bool> CantidadLibro(LibroModel libroModel)
+        {
+            bool auxResponse = false;
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    string uri = $"{_otherUrl}/Libros/{libroModel.id_libro}";
+
+                    var content = new StringContent(JsonConvert.SerializeObject(libroModel), Encoding.UTF8, "application/json");
+
+                    HttpResponseMessage response = await client.PutAsync(uri, content);
+
+                    // Verificar si la solicitud fue exitosa (código de estado 200)
+                    if (response.IsSuccessStatusCode)
+                    {
+                        auxResponse = true;
+                    }
+                    else
+                    {
+                        auxResponse = false;
+                        Console.WriteLine($"Error en la solicitud. Código de estado: {response.StatusCode}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error en la solicitud: {ex.Message}");
+            }
+            return auxResponse;
+        }
+
+
+
         public async Task<bool> GuardarPrestamo(PrestamoModel prestamoModel)
         {
             bool auxResponse = false;

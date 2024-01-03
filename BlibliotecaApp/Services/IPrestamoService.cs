@@ -18,5 +18,7 @@ namespace BlibliotecaApp.Services
         Task<bool> EditarPrestamo(PrestamoModel prestamoModel);
 
         Task<bool> EliminarPrestamo(string id);
+
+        Task<bool> CantidadLibro(LibroModel libroModel);
     }
 }
