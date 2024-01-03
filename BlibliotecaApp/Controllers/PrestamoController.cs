@@ -102,11 +102,11 @@ namespace BlibliotecaApp.Controllers
 
                 bool axuCOnulta = await _prestamoService.CantidadLibro(libroModel);
                 
-                return RedirectToAction("MainPrestamo");
+                return RedirectToAction("FormularioPrestamo");
             }
             else
             {
-                return RedirectToAction("MainPrestamo");
+                return RedirectToAction("FormularioPrestamo");
             }
         }
 
