@@ -14,11 +14,13 @@ namespace BlibliotecaApp.Services
     public class PrestamoService:IPrestamoService
     {
         private static string _baseUrl;
+        private static string _otherUrl;
 
         public PrestamoService()
         {
             // Acceder a la URI desde el archivo de configuración
             _baseUrl = ConfigurationManager.AppSettings["ApiUrlPrestamos"];
+            _otherUrl = ConfigurationManager.AppSettings["ApiUrlRecLibros"];
         }
 
         public async Task<List<PrestamoModel>> ListaPrestamos()
