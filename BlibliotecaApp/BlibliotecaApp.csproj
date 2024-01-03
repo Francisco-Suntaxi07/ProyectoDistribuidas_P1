@@ -125,6 +125,7 @@
     <Compile Include="Controllers\EditorialController.cs" />
     <Compile Include="Controllers\GeneroController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LibroController.cs" />
     <Compile Include="Controllers\PrestamoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -144,19 +145,24 @@
     <Compile Include="Services\IClienteService.cs" />
     <Compile Include="Services\IEditorialService.cs" />
     <Compile Include="Services\IGeneroService.cs" />
+    <Compile Include="Services\ILibroService.cs" />
     <Compile Include="Services\IPrestamoService.cs" />
+    <Compile Include="Services\LibroService.cs" />
     <Compile Include="Services\PrestamoService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\favicon.ico" />
     <Content Include="Assets\img\bg-masthead.jpg" />
     <Content Include="Assets\img\clientesBiblioteca.jpeg" />
+    <Content Include="Assets\img\portfolio\Autores.jpg" />
     <Content Include="Assets\img\portfolio\fullsize\1.jpg" />
     <Content Include="Assets\img\portfolio\fullsize\2.jpg" />
     <Content Include="Assets\img\portfolio\fullsize\3.jpg" />
     <Content Include="Assets\img\portfolio\fullsize\4.jpg" />
     <Content Include="Assets\img\portfolio\fullsize\5.jpg" />
     <Content Include="Assets\img\portfolio\fullsize\6.jpg" />
+    <Content Include="Assets\img\portfolio\generosApi.jpg" />
+    <Content Include="Assets\img\portfolio\librosApi.jpg" />
     <Content Include="Assets\img\portfolio\thumbnails\1.jpg" />
     <Content Include="Assets\img\portfolio\thumbnails\2.jpg" />
     <Content Include="Assets\img\portfolio\thumbnails\3.jpg" />
@@ -241,6 +247,8 @@
     <Content Include="Views\Editorial\MainEditorial.cshtml" />
     <Content Include="Views\Genero\MainGenero.cshtml" />
     <Content Include="Views\Genero\FormularioGenero.cshtml" />
+    <Content Include="Views\Libro\MainLibro.cshtml" />
+    <Content Include="Views\Libro\FormularioLibro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

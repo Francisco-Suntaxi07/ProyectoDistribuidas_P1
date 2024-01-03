@@ -1,35 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace BlibliotecaApp.Models
 {
     public class LibroModel
     {
+        [Key]
+        [StringLength(8)]
+        public string id_libro { get; set; }
         [Required]
         [StringLength(8)]
-        public String id_libro { get; set; }
-
-        public String id_autor { get; set; }
-
-        public String id_genero { get; set; }
-
-        public String id_editorial { get; set; }
-
-        public String titulo_libro { get; set; }
+        public string id_autor { get; set; }
+        [Required]
+        [StringLength(8)]
+        public string id_genero { get; set; }
+        [Required]
+        [StringLength(8)]
+        public string id_editorial { get; set; }
+        [Required]
+        [StringLength(64)]
+        public string titulo_libro { get; set; }
 
         public DateTime fecha_publicacion { get; set; }
-
         public int num_paginas { get; set; }
-
-        public String estado_libro { get; set; }
-
+        [Required]
+        [StringLength(16)]
+        public string estado_libro { get; set; }
         public int cantidad_libro { get; set; }
-
-        public AutorModel Autor { get; set; }
-        public GeneroModel Genero { get; set; }
-        public EditorialModel Editorial { get; set; }
     }
 }
