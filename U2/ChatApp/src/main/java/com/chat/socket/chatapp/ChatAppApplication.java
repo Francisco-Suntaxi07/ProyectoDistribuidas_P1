@@ -1,13 +1,13 @@
-package com.chat.socket;
+package com.chat.socket.chatapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ChatSocketApplication {
+public class ChatAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ChatSocketApplication.class, args);
+		SpringApplication.run(ChatAppApplication.class, args);
 	}
 
 }

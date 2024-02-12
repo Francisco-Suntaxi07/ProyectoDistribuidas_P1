@@ -1,10 +1,10 @@
-package com.chat.socket;
+package com.chat.socket.chatapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ChatSocketApplicationTests {
+class ChatAppApplicationTests {
 
 	@Test
 	void contextLoads() {
