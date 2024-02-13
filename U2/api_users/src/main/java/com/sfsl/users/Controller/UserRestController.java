@@ -21,11 +21,14 @@ public class UserRestController {
     @Autowired
     private IUserService userService;
 
+    //@CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "*")
     @GetMapping("/users/all")
     public ResponseEntity<List<UserEntity>> findAllUsers (){
         return ResponseEntity.ok().body(userService.findAllUsers());
     }
 
+    @CrossOrigin(origins = "*")
     @GetMapping("/users/{id}")
     public ResponseEntity<?> findUserById(@PathVariable Long id){
         Optional<UserEntity> response = userService.findUserById(id);
@@ -35,6 +38,7 @@ public class UserRestController {
         return ResponseEntity.ok().body(response.get());
     }
 
+    @CrossOrigin(origins = "*")
     @PostMapping("/users/save")
     public ResponseEntity<?> saveUser(@Valid @RequestBody UserEntity user, BindingResult result){
         if(result.hasErrors()) {
@@ -44,6 +48,8 @@ public class UserRestController {
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
+
+    @CrossOrigin(origins = "*")
     @DeleteMapping("/users/delete/{id}")
     public ResponseEntity<?> deleteUserByID(@PathVariable Long id){
         boolean response = userService.deleteUserByID(id);
