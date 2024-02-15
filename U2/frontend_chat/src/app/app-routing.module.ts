@@ -5,7 +5,8 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegistroComponent } from './auth/registro/registro.component';
 
 const routes: Routes = [
-  {path: '', component: LoginComponent},
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
+  {path: 'login', component: LoginComponent},
   {path: 'chat/:userId', component: ChatComponent}
 ];
 

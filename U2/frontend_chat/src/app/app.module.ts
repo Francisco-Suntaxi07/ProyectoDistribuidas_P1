@@ -14,6 +14,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -21,7 +24,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     ChatComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
