@@ -26,6 +26,11 @@ public class UserEntity implements Serializable {
     private boolean state;
 
 
+
+    @Column(name = "idChat")
+    private String idChat;
+
+
     public UserEntity() {
         super();
         this.state = false;
@@ -61,5 +66,13 @@ public class UserEntity implements Serializable {
 
     public void setState(boolean state) {
         this.state = state;
+    }
+
+    public String getIdChat() {
+        return idChat;
+    }
+
+    public void setIdChat(String idChat) {
+        this.idChat = idChat;
     }
 }
