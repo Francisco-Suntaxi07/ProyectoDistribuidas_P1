@@ -15,7 +15,8 @@ export class ChatComponent implements OnInit {
   messageList: any[] = [];
   parametro: string="";
 
-  constructor(private chatService: ChatService,
+  constructor(
+    private chatService: ChatService,
     private route: ActivatedRoute
     ){
 
