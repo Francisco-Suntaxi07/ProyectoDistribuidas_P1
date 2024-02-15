@@ -1,14 +1,27 @@
 <div class="container">
+    <br>
     <div>
-        <input type="text" [(ngModel)]="userName" placeholder="Ingrese su usuario">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Usuario:</mat-label>
+                <input type="text" [(ngModel)]="userName" matInput placeholder="Ingrese su usuario">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Contraseña:</mat-label>
+                <input [type]="hide ? 'password' : 'text'" [(ngModel)]="password" matInput placeholder="Ingrese su contraseña">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div>
+        <button class="btn btn-outline-primary" (click)="goToChat()">Ingresar</button>
     </div>
     <div>
-        <input type="text" [(ngModel)]="password" placeholder="Ingrese su contraseña">
-    </div>
-    <div>
-        <button class="btn btn-primary" (click)="goToChat()">Ingresar</button>
-    </div>
-    <div>
-        <button class="btn btn-primary"  [routerLink]="['/registro']">Registrate</button>
+        <button class="btn btn-outline-success" (click)="openSignIn()">Registrate</button>
     </div>
 </div>

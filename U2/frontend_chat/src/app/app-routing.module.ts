@@ -6,8 +6,7 @@ import { RegistroComponent } from './auth/registro/registro.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
-  {path: 'chat/:userId', component: ChatComponent},
-  {path: 'registro', component: RegistroComponent},
+  {path: 'chat/:userId', component: ChatComponent}
 ];
 
 @NgModule({

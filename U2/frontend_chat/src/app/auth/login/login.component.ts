@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { UserModel } from 'src/app/models/UserModel';
 import { UsersService } from 'src/app/services/users.service';
+import { RegistroComponent } from '../registro/registro.component';
 
 @Component({
   selector: 'app-login',
@@ -11,14 +13,16 @@ import { UsersService } from 'src/app/services/users.service';
 })
 export class LoginComponent implements OnInit {
 
+  hide = true;
   private listUsers: UserModel[] = [];
-  userName: string = '';
-  password: string = '';
+  userName: string | undefined;
+  password: string | undefined;
 
   constructor(
     private router: Router,
     private userService: UsersService,
-    private snackBar: MatSnackBar) { }
+    private snackBar: MatSnackBar,
+    public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.loadUsers();
@@ -32,16 +36,16 @@ export class LoginComponent implements OnInit {
   }
 
   goToChat() {
-    if (this.verifyUsers()) {
+    if (this.verifyUser()) {
       this.router.navigate(['/chat', this.userName]);
     } else {
-      this.snackBar.open("Usuario o contraseña incorrecta", "Cerrar", {
+      this.snackBar.open("❌ Usuario o contraseña incorrecta", "Cerrar", {
         duration: 3000
       });
     }
   }
 
-  verifyUsers(): boolean {
+  verifyUser(): boolean {
     let user = this.userName;
     let password = this.password;
     for (let i = 0; i < this.listUsers.length; i++) {
@@ -50,6 +54,15 @@ export class LoginComponent implements OnInit {
       }
     }
     return false;
+  }
+
+  openSignIn(): void {
+    const dialogRef = this.dialog.open(RegistroComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      this.loadUsers();
+    });
   }
 
 }
