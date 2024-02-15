@@ -7,7 +7,7 @@
       </div>
       <div class="title">
         <img src="../../../assets/ico_ms.png" width="25px" height="25px">
-        Sublime-Message
+       Chat
       </div>
     </div>
     <ul class="messages">
@@ -16,6 +16,7 @@
       >
         <div class="avatar"></div>
         <div class="text_wrapper">
+          <span *ngIf="item.message_side === 'sender'">{{userId}}:</span> 
           <div class="text">{{item.message}}</div>
         </div>
       </li>

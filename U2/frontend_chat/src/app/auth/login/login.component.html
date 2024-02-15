@@ -1,1 +1,14 @@
-<p>login works!</p>
+<div class="container">
+    <div>
+        <input type="text" [(ngModel)]="userName" placeholder="Ingrese su usuario">
+    </div>
+    <div>
+        <input type="text" [(ngModel)]="password" placeholder="Ingrese su contraseña">
+    </div>
+    <div>
+        <button class="btn btn-primary" (click)="goToChat()">Ingresar</button>
+    </div>
+    <div>
+        <button class="btn btn-primary"  [routerLink]="['/registro']">Registrate</button>
+    </div>
+</div>
