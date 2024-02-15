@@ -13,20 +13,13 @@ export class ChatComponent implements OnInit {
   messageInput: string = '';
   userId: string="";
   messageList: any[] = [];
-  parametro: string="";
 
   constructor(
     private chatService: ChatService,
     private route: ActivatedRoute
-    ){
-
-  }
+    ) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe(params => {
-      this.parametro = params['parametro'];
-    });
-
     this.userId = this.route.snapshot.params["userId"];
     this.chatService.joinRoom("ABC");
     this.lisenerMessage();
