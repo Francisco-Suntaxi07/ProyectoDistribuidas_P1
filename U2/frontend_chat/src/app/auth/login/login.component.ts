@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
 
   hide = true;
   private listUsers: UserModel[] = [];
+  private user: UserModel = new UserModel();
   userName: string | undefined;
   password: string | undefined;
 
@@ -37,7 +38,7 @@ export class LoginComponent implements OnInit {
 
   goToChat() {
     if (this.verifyUser()) {
-      this.router.navigate(['/chat', this.userName]);
+      this.router.navigate(['/home', this.user.id]);
     } else {
       this.snackBar.open("❌ Usuario o contraseña incorrecta", "Cerrar", {
         duration: 3000
@@ -46,10 +47,11 @@ export class LoginComponent implements OnInit {
   }
 
   verifyUser(): boolean {
-    let user = this.userName;
+    let name = this.userName;
     let password = this.password;
     for (let i = 0; i < this.listUsers.length; i++) {
-      if (user == this.listUsers[i].name && password == this.listUsers[i].password) {
+      if (name == this.listUsers[i].name && password == this.listUsers[i].password) {
+        this.user = this.listUsers[i];
         return true;
       }
     }
