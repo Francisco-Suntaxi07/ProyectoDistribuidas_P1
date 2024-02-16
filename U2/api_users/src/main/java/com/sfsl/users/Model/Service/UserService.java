@@ -27,16 +27,16 @@ public class UserService implements IUserService{
         return userRepository.findById(id);
     }
 
+
     @Override
     public UserEntity saveUser(UserEntity user) {
-        String clave = this.encryptData(user.getPassword());
-        user.setPassword(clave);
+        String password = this.encryptData(user.getPassword());
+        user.setPassword(password);
         return userRepository.save(user);
     }
     private String encryptData(String data) {
         return Base64.getEncoder().encodeToString(data.getBytes());
     }
-
 
     @Override
     public Boolean deleteUserByID(Long id) {
