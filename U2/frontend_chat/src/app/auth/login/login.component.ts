@@ -46,8 +46,6 @@ export class LoginComponent implements OnInit {
     }
   }
 
-
-
   verifyUser(): boolean {
     let name = this.userName;
     let password = this.password;
@@ -60,6 +58,7 @@ export class LoginComponent implements OnInit {
     }
     return false;
 }
+  
 
   openSignIn(): void {
     const dialogRef = this.dialog.open(RegistroComponent);
