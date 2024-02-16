@@ -20,8 +20,8 @@ export class DashboardComponent {
   ) { }
 
   ngOnInit(): void {
-    this.loadUsers();
     this.userId = Number(this.route.snapshot.params["userId"]);
+    this.loadUsers();
   }
 
   loadUsers() {
@@ -35,6 +35,5 @@ export class DashboardComponent {
       });
     });
   }
-
 
 }

@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent {
 
-  userId: string = "";
+  private userId: Number = 0;
   constructor(
     private route: ActivatedRoute
   ){ }
