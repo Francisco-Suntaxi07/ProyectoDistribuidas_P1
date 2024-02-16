@@ -1,16 +1,16 @@
 .footer {
-    background-color: #00caad;
+    background-color: #24caebba;
     color: #ffffff;
     padding: 40px 0;
   
     .footer-section {
       h5 {
-        color: #000000;
+        color: #ffff;
         margin-bottom: 20px;
       }
   
       p {
-        color: #bbbbbb;
+        color: #ffff;
       }
     }
   
@@ -18,7 +18,7 @@
       a {
         display: inline-block;
         margin-right: 10px;
-        color: #bbbbbb;
+        color: #ffff;
         transition: color 0.3s;
   
         &:hover {
@@ -34,9 +34,13 @@
     .footer-bottom {
       margin-top: 20px;
       p {
-        color: #bbbbbb;
+        color: #ffff;
         margin-bottom: 0;
       }
     }
+  }
+
+  .copy{
+    margin-top: 40px;
   }
   
