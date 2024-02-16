@@ -1,0 +1,96 @@
+//imagen
+.img {
+    margin-top: -10px;
+
+}
+
+//contenedor
+.container {
+    background-color: #c9ddf8;
+    margin-top: 40px;
+    border-radius: 100px;
+    padding-bottom: 10px;
+
+}
+
+.text-encabezado {
+    text-align: center;
+    color: rgb(57, 56, 56);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+.registro {
+
+    margin-left: 150px;
+}
+
+//tamaño texto ingresos, fuentes y color
+.campo-texto {
+    width: 300px;
+}
+
+.text-font {
+    color: rgb(65, 65, 65);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+//diseño ojo de contraseña
+
+.toggle-password-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
+.toggle-password-icon {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #757575;
+}
+
+
+.toggle-password-icon.active {
+    color: #a715e6;
+}
+
+//espaciado entre botones
+.boton-registro {
+    margin-left: 30px;
+}
+
+.boton-registro button {
+    margin-right: 10px;
+}
+
+.boton-registro button:last-child {
+    margin-left: 0px;
+}
+
+//diseño botones registro e inicio
+.boton-reg {
+    background-color: #04a6b8cd;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-reg:hover {
+    background-color: #04a7b8;
+}
+
+.boton-ini {
+    background-color: #00caacd2;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-ini:hover {
+    background-color: #00caad;
+}

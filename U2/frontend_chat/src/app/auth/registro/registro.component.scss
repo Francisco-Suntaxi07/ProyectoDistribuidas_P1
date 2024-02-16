@@ -1,7 +1,6 @@
-// styles.scss
 
 .boton-reg {
-    background-color: #1b4b5acb;
+    background-color: #5b2c6fc3;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -10,12 +9,12 @@
 }
 
 .boton-reg:hover {
-    background-color: #1b4b5a;
+    background-color: #5B2C6F;
 }
 
   
   .boton-close {
-    background-color: #f55449ce; 
+    background-color: #c70038c7; 
     color: white; 
     border: none; 
     padding: 0.5rem 1rem; 
@@ -24,7 +23,7 @@
   }
   
   .boton-close:hover {
-    background-color: #f55449;
+    background-color: #C70039;
   }
   
 
@@ -34,7 +33,7 @@
   
 
   .cabecera {
-    background: #0f1f38;
+    background: #6A1D8A;
     text-align: center;
 }
 
@@ -53,9 +52,29 @@
 }
 
 .boton-registro button {
-    margin-right: 10px; /* Agrega espacio a la derecha del primer botón */
+    margin-right: 10px; 
 }
 
 .boton-registro button:last-child {
-    margin-left: 10px; /* Agrega espacio a la izquierda del último botón */
+    margin-left: 10px; 
 }
+
+
+.toggle-password-button {
+  background-color: transparent;
+  border: none; // Sin borde
+  cursor: pointer; 
+  outline: none; 
+  padding: 0; 
+}
+
+.toggle-password-icon {
+  margin-right: 10px;
+  font-size: 24px; // Tamaño del ícono
+  color: #757575; // Color del ícono
+}
+
+.toggle-password-icon.active {
+  color: #a715e6; 
+}
+

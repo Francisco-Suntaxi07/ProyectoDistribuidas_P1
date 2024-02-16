@@ -1,5 +1,5 @@
 <div class="cabecera">
-  <h1 mat-dialog-title>CHATFUSION REGISTRO</h1>
+  <h1 mat-dialog-title>REGISTRO</h1>
 </div>
 
 <div mat-dialog-content>
@@ -10,7 +10,7 @@
         <div class="col">
           <mat-form-field appearance="outline" class="campo-texto">
             <mat-label class="text-font">Nombre de usuario:</mat-label>
-            <input formControlName="name" matInput name="name" />
+            <input class="text-font" formControlName="name" matInput name="name" />
           </mat-form-field>
         </div>
       </div>
@@ -18,22 +18,22 @@
         <div class="col">
           <mat-form-field appearance="outline" class="campo-texto">
             <mat-label>Contraseña:</mat-label>
-            <input [type]="hide ? 'password' : 'text'" formControlName="password" name="password" matInput
+            <input class="text-font" [type]="hide ? 'password' : 'text'" formControlName="password" name="password" matInput
               placeholder="Ingrese su contraseña">
-            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-              [attr.aria-pressed]="hide">
-              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            <button mat-icon-button matSuffix class="toggle-password-button" (click)="hide = !hide"
+              [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon class="toggle-password-icon" [ngClass]="{ 'active': hide }">visibility_off</mat-icon>
             </button>
           </mat-form-field>
         </div>
       </div>
     </fieldset>
-        <div class="boton-registro">
-          <button class="boton-reg btn btn-success" (click)="saveUser()" [disabled]="!form.valid" type="submit">
-            Registrarse
-          </button>
-          <button class="boton-close btn btn-outline-danger" (click)="closeSignIn()">Cerrar</button>
-        </div>
+    <div class="boton-registro">
+      <button class="boton-reg btn btn-success" (click)="saveUser()" [disabled]="!form.valid" type="submit">
+        Registrarse
+      </button>
+      <button class="boton-close btn btn-outline-danger" (click)="closeSignIn()">Cerrar</button>
+    </div>
   </form>
   <hr>
 </div>

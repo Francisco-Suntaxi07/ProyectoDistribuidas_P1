@@ -1,27 +1,49 @@
-<div class="container">
-    <br>
-    <div>
-        <div class="row">
-            <mat-form-field appearance="outline">
-                <mat-label>Usuario:</mat-label>
-                <input type="text" [(ngModel)]="userName" matInput placeholder="Ingrese su usuario">
-            </mat-form-field>
+
+<body>
+    <div class="container">
+<br>
+    <div class="text-encabezado">
+        <h1 style="text-align: center;">BIENVENIDO A CHATFUSSION</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4"> 
+            <div class="registro">
+                <br><br><br><br><br><br><br><br><br><br>
+                <div class="row">
+                    <mat-form-field  class="campo-texto">
+                        <mat-label class="text-font" >Usuario:</mat-label>
+                        <input class="text-font" type="text" [(ngModel)]="userName" matInput placeholder="Ingrese su usuario">
+                    </mat-form-field>
+                </div>
+                <div class="row">
+                    <mat-form-field >
+                        <mat-label class="text-font" >Contraseña:</mat-label>
+                        <input [type]="hide ? 'password' : 'text'" [(ngModel)]="password" matInput
+                            placeholder="Ingrese su contraseña">
+                            <button mat-icon-button matSuffix class="toggle-password-button" (click)="hide = !hide"
+                                [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                <mat-icon class="toggle-password-icon" [ngClass]="{ 'active': hide }">visibility_off</mat-icon>
+                            </button>
+                    </mat-form-field>
+                </div>
+
+                <div class="boton-registro">
+                    <button class="boton-ini btn btn-outline-primary" (click)="goToChat()">Ingresar</button>
+                    <button class="boton-reg btn btn-outline-success" (click)="openSignIn()">Registrate</button>
+                </div>
+
+            </div>
         </div>
-        <div class="row">
-            <mat-form-field appearance="outline">
-                <mat-label>Contraseña:</mat-label>
-                <input [type]="hide ? 'password' : 'text'" [(ngModel)]="password" matInput placeholder="Ingrese su contraseña">
-                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                  </button>
-            </mat-form-field>
+        <div class="col-md-8">
+            <div class="img">
+                <img src="assets/imgFusion.png" style="width: 91%; height: auto;">
+            </div>
+            
         </div>
     </div>
 
-    <div>
-        <button class="btn btn-outline-primary" (click)="goToChat()">Ingresar</button>
+
     </div>
-    <div>
-        <button class="btn btn-outline-success" (click)="openSignIn()">Registrate</button>
-    </div>
-</div>
+    
+</body>
+    
