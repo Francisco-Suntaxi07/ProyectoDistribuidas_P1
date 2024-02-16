@@ -20,7 +20,7 @@ export class RoomsService {
     return this.httpClient.post<any>(`${this.urlApi}/save`, chats);
   }
 
-  findChatsById(id: number): Observable<ChatsModel> {
+  findChatsById(id: number | undefined): Observable<ChatsModel> {
     return this.httpClient.get<ChatsModel>(`${this.urlApi}/${id}`);
   }
   
