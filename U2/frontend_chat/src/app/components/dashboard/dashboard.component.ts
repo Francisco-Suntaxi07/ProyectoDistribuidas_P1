@@ -13,6 +13,7 @@ export class DashboardComponent {
   private listUsers: UserModel[] = [];
   connectedListUsers: UserModel[] = [];
   private userId: Number = 0;
+  showChatComponent: boolean = false;
 
   constructor(
     private userService: UsersService,

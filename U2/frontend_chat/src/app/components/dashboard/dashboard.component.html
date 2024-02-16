@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-auto bg-color">
+    <div class="col-md-auto">
         <mat-card *ngFor="let user of connectedListUsers" [ngClass]="{ 'opaque-card': !user.state }"
             class="mb-1 border bg-light card-opaque">
             <mat-card-header>
@@ -9,7 +9,7 @@
             <mat-card-actions>
                 <div class="row">
                     <div class="col-md-auto">
-                        <button class="btn btn-outline-info">Enviar mensaje</button>
+                        <button class="btn btn-outline-info" (click)="showChatComponent = true">Enviar mensaje</button>
                     </div>
                     <div class="col">
                         <mat-card-subtitle>{{user.state}}</mat-card-subtitle>
@@ -20,7 +20,6 @@
     </div>
 
     <div class="col bg-color2">
-
+        <app-chat *ngIf="showChatComponent"></app-chat>
     </div>
-    <br>
 </div>
