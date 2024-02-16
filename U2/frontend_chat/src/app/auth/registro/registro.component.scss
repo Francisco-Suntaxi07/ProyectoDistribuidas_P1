@@ -1,0 +1,61 @@
+// styles.scss
+
+.boton-reg {
+    background-color: #1b4b5acb;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-reg:hover {
+    background-color: #1b4b5a;
+}
+
+  
+  .boton-close {
+    background-color: #f55449ce; 
+    color: white; 
+    border: none; 
+    padding: 0.5rem 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .boton-close:hover {
+    background-color: #f55449;
+  }
+  
+
+.campo-texto {
+    width: 400px; 
+  }
+  
+
+  .cabecera {
+    background: #0f1f38;
+    text-align: center;
+}
+
+
+.cabecera h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color:#ffff;
+}
+
+.text-font{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+}
+
+.boton-registro{
+    margin-left: 90px;    
+}
+
+.boton-registro button {
+    margin-right: 10px; /* Agrega espacio a la derecha del primer botón */
+}
+
+.boton-registro button:last-child {
+    margin-left: 10px; /* Agrega espacio a la izquierda del último botón */
+}
