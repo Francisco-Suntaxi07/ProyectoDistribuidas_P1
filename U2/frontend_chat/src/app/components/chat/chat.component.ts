@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { Component, ElementRef, OnInit, QueryList, ViewChildren, Input  } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ChatMessage } from 'src/app/models/chat-message';
 import { ChatService } from 'src/app/services/chat.service';
@@ -9,6 +9,7 @@ import { ChatService } from 'src/app/services/chat.service';
   styleUrls: ['./chat.component.scss']
 })
 export class ChatComponent implements OnInit {
+  @Input() roomId: number | undefined;
 
   messageInput: string = '';
   userId: string="";
@@ -20,17 +21,32 @@ export class ChatComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
+    let roomIdString: string;
     this.userId = this.route.snapshot.params["userId"];
-    this.chatService.joinRoom("ABC");
+    console.log("IMPU TRECIBIDO", this.roomId);
+    if (this.roomId !== undefined) {
+      roomIdString = this.roomId.toString();
+    } else {
+      roomIdString = "0";
+    }
+    console.log("SALA ROOM CREADA: ", roomIdString);
+    this.chatService.joinRoom(roomIdString);
     this.lisenerMessage();
+    
   }
 
   sendMessage() {
+    let roomIdString: string;
     const chatMessage = {
       message: this.messageInput,
       user: this.userId
     }as ChatMessage
-    this.chatService.sendMessage("ABC", chatMessage);
+    if (this.roomId !== undefined) {
+      roomIdString = this.roomId.toString();
+    } else {
+      roomIdString = "0";
+    }
+    this.chatService.sendMessage(roomIdString, chatMessage);
     this.messageInput = '';
   }
 

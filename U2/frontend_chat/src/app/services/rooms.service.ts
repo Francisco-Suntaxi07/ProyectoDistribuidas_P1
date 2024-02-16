@@ -6,7 +6,7 @@ import { ChatsModel } from '../models/ChatsModel';
 @Injectable({
   providedIn: 'root'
 })
-export class ChatsService {
+export class RoomsService {
   
   private urlApi = 'http://localhost:8080/api/chats';
 
