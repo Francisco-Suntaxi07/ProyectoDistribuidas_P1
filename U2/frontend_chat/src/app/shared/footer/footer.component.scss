@@ -1,13 +1,17 @@
 .footer {
-    background-color: #3eccea;
+    background-color: #89cefc;
     color: #ffffff;
-    padding: 6px 0;
-
-    .footer-section h5 {
-        color: #ffffff;
+    padding: 40px 0;
+  
+    .footer-section {
+      h5 {
+        color: #ffff;
         margin-bottom: 20px;
-        text-align: center;
-        margin-right: 3px;
+      }
+  
+      p {
+        color: #ffff;
+      }
     }
 
     .footer-section p {
@@ -17,8 +21,8 @@
 
     .social-links a {
         display: inline-block;
-        margin-right: 3px;
-        color: #f8f9fa;
+        margin-right: 10px;
+        color: #ffff;
         transition: color 0.3s;
     }
 
@@ -32,10 +36,15 @@
     }
 
     .footer-bottom {
-        margin-top: 20px;
-        p {
-            color: #f8f9fa;
-            margin-bottom: 0;
-        }
+      margin-top: 20px;
+      p {
+        color: #ffff;
+        margin-bottom: 0;
+      }
     }
-}
+  }
+
+  .copy{
+    margin-top: 20px;
+  }
+  

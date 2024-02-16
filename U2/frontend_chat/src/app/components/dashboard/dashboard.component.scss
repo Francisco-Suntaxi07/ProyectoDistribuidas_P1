@@ -5,5 +5,18 @@
     background-color: rgb(75, 215, 178);
 }
 .bg-color2{
-    background-color: rgb(194, 215, 75);
+    background-color: #732595c3;
+    height: 650px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 650px; /* Ajusta esta altura máxima según tus necesidades */
+    overflow-y: auto; /* Añade una barra de desplazamiento vertical cuando sea necesario */
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+}
+
+.mat-card {
+    margin-bottom: 10px; /* Espacio entre tarjetas */
 }
