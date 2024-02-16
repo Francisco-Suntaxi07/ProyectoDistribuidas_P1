@@ -2,10 +2,12 @@ package com.sfsl.users.Model.Service;
 
 import com.sfsl.users.Model.Entity.UserEntity;
 import com.sfsl.users.Model.Repository.IUserRepository;
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 
@@ -27,8 +29,14 @@ public class UserService implements IUserService{
 
     @Override
     public UserEntity saveUser(UserEntity user) {
+        String clave = this.encryptData(user.getPassword());
+        user.setPassword(clave);
         return userRepository.save(user);
     }
+    private String encryptData(String data) {
+        return Base64.getEncoder().encodeToString(data.getBytes());
+    }
+
 
     @Override
     public Boolean deleteUserByID(Long id) {
