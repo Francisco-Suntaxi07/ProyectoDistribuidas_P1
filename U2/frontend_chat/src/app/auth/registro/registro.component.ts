@@ -75,7 +75,7 @@ export class RegistroComponent {
   verifyUsers(user: UserModel): boolean {
     this.loadUsers();
     for (let i = 0; i < this.listUsers.length; i++) {
-      if (user.name === this.listUsers[i].name && user.password === this.listUsers[i].password) {
+      if (user.name === this.listUsers[i].name) {
         return false;
       }
     }

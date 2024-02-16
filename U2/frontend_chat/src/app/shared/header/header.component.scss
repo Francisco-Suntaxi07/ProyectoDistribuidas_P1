@@ -1,3 +1,28 @@
 .bg-color{
-    background-color: rgb(64, 255, 0);
+    background-color: #6a3aa4da;
+}
+
+.texto-cen{
+    margin-top: 30px;
+    text-align: left;
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+.boton-salir{
+    margin-top: 40px;
+   
+}
+
+.boton-salir {
+    background-color: #5b2c6fc3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-salir:hover {
+    background-color: #5B2C6F;
 }
