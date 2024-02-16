@@ -43,9 +43,9 @@ export class LoginComponent implements OnInit {
       this.userService.findUserById(this.user.id).subscribe(data =>{
         auxUser=data;
         auxUser.state=true;
-        this.userService.saveUser(auxUser).subscribe(data => {});
+        //this.userService.saveUser(auxUser).subscribe(data => {});
       });
-      
+
     } else {
       this.snackBar.open("❌ Usuario o contraseña incorrecta", "Cerrar", {
         duration: 3000

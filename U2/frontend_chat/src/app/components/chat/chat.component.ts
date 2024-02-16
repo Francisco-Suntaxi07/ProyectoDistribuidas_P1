@@ -56,8 +56,8 @@ export class ChatComponent implements OnInit {
       }
       this.userService.findUserById(Number(axuUser2)).subscribe(data =>{
         this.user2 = data;
-        console.log("USUARIO 1:" , this.user1.name);
-        console.log("USUARIO 2:" , this.user2.name);
+       // console.log("USUARIO 1:" , this.user1.name);
+        //console.log("USUARIO 2:" , this.user2.name);
       });
       
     });
