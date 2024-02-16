@@ -2,34 +2,34 @@
     <div class="col-md-auto">
         <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
             <mat-icon>more_vert</mat-icon>
-          </button>
-          <mat-menu #menu="matMenu">
+        </button>
+        <mat-menu #menu="matMenu">
             <button mat-menu-item (click)="grupalChat()">
-              <mat-icon>dialpad</mat-icon>
-              <span>Chat Grupal</span>
+                <mat-icon>dialpad</mat-icon>
+                <span>Chat Grupal</span>
             </button>
-          </mat-menu>
+        </mat-menu>
     </div>
     <div class="col-md-auto">
-        <mat-card *ngFor="let user of connectedListUsers" [ngClass]="{ 'opaque-card': !user.state }"
-            class="mb-1 border bg-light card-opaque">
-            <mat-card-header>
-                <mat-card-title>{{user.name}}</mat-card-title>
-            </mat-card-header>
-
-            <mat-card-actions>
-                <div class="row">
-                    <div class="col-md-auto">
-                        <button class="btn btn-outline-info" (click)="sendIdRoom(user.id)">Enviar mensaje</button>
+        <div class="card-container">
+            <mat-card *ngFor="let user of connectedListUsers" [ngClass]="{ 'opaque-card': !user.state }"
+                class="mb-1 border bg-light card-opaque">
+                <mat-card-header>
+                    <mat-card-title>{{user.name}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-actions>
+                    <div class="row">
+                        <div class="col-md-auto">
+                            <button class="btn btn-outline-info" (click)="sendIdRoom(user.id)">Enviar mensaje</button>
+                        </div>
+                        <div class="col">
+                            <mat-card-subtitle>{{user.state}}</mat-card-subtitle>
+                        </div>
                     </div>
-                    <div class="col">
-                        <mat-card-subtitle>{{user.state}}</mat-card-subtitle>
-                    </div>
-                </div>
-            </mat-card-actions>
-        </mat-card>
+                </mat-card-actions>
+            </mat-card>
+        </div>
     </div>
-
     <div class="col bg-color2">
         <app-chat *ngIf="showChatComponent" [roomId]="roomId"></app-chat>
     </div>
