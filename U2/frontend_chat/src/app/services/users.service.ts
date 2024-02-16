@@ -20,7 +20,7 @@ export class UsersService {
     return this.httpClient.post<any>(`${this.urlApi}/save`, user);
   }
 
-  findUserById(id: number): Observable<UserModel> {
+  findUserById(id: number | undefined): Observable<UserModel> {
     return this.httpClient.get<UserModel>(`${this.urlApi}/${id}`);
   }
   

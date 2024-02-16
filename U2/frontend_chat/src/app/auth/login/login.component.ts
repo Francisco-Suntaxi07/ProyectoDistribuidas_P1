@@ -37,8 +37,15 @@ export class LoginComponent implements OnInit {
   }
 
   goToChat() {
+    let auxUser: UserModel = new UserModel();
     if (this.verifyUser()) {
       this.router.navigate(['/home', this.user.id]);
+      this.userService.findUserById(this.user.id).subscribe(data =>{
+        auxUser=data;
+        auxUser.state=true;
+        this.userService.saveUser(auxUser).subscribe(data => {});
+      });
+      
     } else {
       this.snackBar.open("❌ Usuario o contraseña incorrecta", "Cerrar", {
         duration: 3000
