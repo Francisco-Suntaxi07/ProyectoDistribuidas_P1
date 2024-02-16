@@ -1,4 +1,19 @@
+
+<div class="col">
+    
+</div>
 <div class="row">
+    <div class="col-md-auto">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="grupalChat()">
+              <mat-icon>dialpad</mat-icon>
+              <span>Chat Grupal</span>
+            </button>
+          </mat-menu>
+    </div>
     <div class="col-md-auto">
         <mat-card *ngFor="let user of connectedListUsers" [ngClass]="{ 'opaque-card': !user.state }"
             class="mb-1 border bg-light card-opaque">

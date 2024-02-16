@@ -62,4 +62,9 @@ export class DashboardComponent {
     this.showChatComponent = true;
   }
 
+  grupalChat(){
+    this.roomId = 0;
+    this.showChatComponent = true;
+  }
+
 }
