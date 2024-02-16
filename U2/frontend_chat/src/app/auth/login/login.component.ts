@@ -46,17 +46,20 @@ export class LoginComponent implements OnInit {
     }
   }
 
+
+
   verifyUser(): boolean {
     let name = this.userName;
     let password = this.password;
     for (let i = 0; i < this.listUsers.length; i++) {
-      if (name == this.listUsers[i].name && password == this.listUsers[i].password) {
-        this.user = this.listUsers[i];
-        return true;
-      }
+      let decryptedPassword = this.decryptPassword(String(this.listUsers[i].password));
+        if (name == this.listUsers[i].name && password == decryptedPassword) {
+            this.user = this.listUsers[i];
+            return true;
+        }
     }
     return false;
-  }
+}
 
   openSignIn(): void {
     const dialogRef = this.dialog.open(RegistroComponent);
@@ -66,5 +69,10 @@ export class LoginComponent implements OnInit {
       this.loadUsers();
     });
   }
+
+  decryptPassword(encryptedPassword: string): string {
+    const decodedBytes = atob(encryptedPassword);
+    return decodedBytes;
+}
 
 }
