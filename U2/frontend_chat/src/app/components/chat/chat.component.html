@@ -16,7 +16,8 @@
       >
         <div class="avatar"></div>
         <div class="text_wrapper">
-          <span *ngIf="item.message_side === 'sender'">{{userId}}:</span> 
+          <span *ngIf="item.message_side === 'sender'">{{user1.name}}:</span> 
+          <span *ngIf="item.message_side === 'receiver'">{{user2.name}}</span>
           <div class="text">{{item.message}}</div>
         </div>
       </li>
