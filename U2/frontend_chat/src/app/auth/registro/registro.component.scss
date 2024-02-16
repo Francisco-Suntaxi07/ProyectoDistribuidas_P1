@@ -62,7 +62,7 @@
 
 .toggle-password-button {
   background-color: transparent;
-  border: none; // Sin borde
+  border: none; 
   cursor: pointer; 
   outline: none; 
   padding: 0; 
@@ -70,8 +70,8 @@
 
 .toggle-password-icon {
   margin-right: 10px;
-  font-size: 24px; // Tamaño del ícono
-  color: #757575; // Color del ícono
+  font-size: 24px; 
+  color: #757575; 
 }
 
 .toggle-password-icon.active {
